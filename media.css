@@ -1,0 +1,68 @@
+@media screen and (max-width: 1490px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    article {
+        display: flex;
+        margin-top: 50px;
+    }
+    @media screen and (max-width: 1210px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+    #submit{
+        align-self: center;
+    }
+    img{
+        display: flex;
+        align-items: center;
+        margin-top: 60px;
+        width: 70%;
+    }
+    }
+    @media screen and (max-width: 760px) {
+        h2{
+            font-size: 25px;
+            line-height: 5px;
+        }
+        #submit{
+            width: 30%;
+        }
+    }
+    @media screen and (max-width: 640px) {
+        img {
+            display: none;
+        }
+        h2{
+            font-size: 23px;
+            line-height: 10px;
+        }
+        
+    }
+    @media screen and (max-width: 570px) {
+        h2{
+            font-size: 19px;
+        }
+        #title{
+            line-height: 20px;
+        }
+    }
+    @media screen and (max-width: 540px) {
+        h2{
+            font-size: 15px;
+        }
+    }
+}
