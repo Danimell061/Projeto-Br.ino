@@ -38,6 +38,11 @@ header{
     align-items: center;
 }
 
+.logo{
+    height:64px ;
+    width:180px ;
+}
+
 #title{
     flex-direction: column;
     line-height: 10px;
@@ -85,12 +90,13 @@ main{
 h2{
     font-size: 30px;
     line-height: 10px;
-    font-family: poppinsmedium;
+    font-family: FiraFans;
 }
 
 span{
     color: #5AB18E;
     font-size: 50px;
+    font:Fira Sans;
 }
 
 p{
