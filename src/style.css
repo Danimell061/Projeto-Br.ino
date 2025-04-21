@@ -237,7 +237,37 @@ form {
     cursor: pointer;
 }
 
+h5{
+    font-family: FiraFans;
+    font-size: 40px;
+    margin-top: 0px;
+}
 
+.portifolio{
+    justify-content: center;
+    display: flex;
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    flex-direction: column; /* Alinha os elementos verticalmente */
+}
+
+.OndeAtuamos{
+    justify-content: center;
+    display: flex;
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    width: 90%;
+    height: 90%;
+}
+
+.depoimentos{
+    justify-content: center;
+    display: flex;
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    flex-direction: column; /* Alinha os elementos verticalmente */
+}
 
 /* ---------------------------------- TEXT ---------------------------------- */
 
