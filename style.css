@@ -8,7 +8,7 @@ body{
 }
 
 header{
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
     padding: 10px;
     display: flex;
@@ -42,35 +42,90 @@ li{
 
 #especial{
     border: 2px solid #5AB18E;
+    color: #5AB18E;
     padding: 10px;
     border-radius: 10px;
 }
 #especial:hover{
-    transition: 0.3s all;
+    transition: 0.2s all;
     background-color: #5AB18E;
-    color: rgb(0, 0, 0);
-}
-
-h1{
-    font-weight: 200;
-    font-size: 40px;
+    color: rgb(255, 255, 255);
 }
 
 /* ---------------------------------- TOPO ---------------------------------- */
 
 main{
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+#main{
     display: flex;
     flex-direction: row;
-    margin-top: 100px;
     justify-content: space-between;
+    align-items: center;
+}
+
+#main2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 50px 100px;
+}
+
+.box {
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 150px;
+    text-align: center;
+    background-color: #5AB18E;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid #ddd; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.box2 {
+    margin: 0 auto;
+    width: 200px;
+    height: 300px;
+    padding: 0 10 20 10px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    border: 2px solid #ffffff; 
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+h1{
+    line-height: 8px;
+    font-size: 40px;
+    font-family: FiraFans;
 }
 
 h2{
     font-size: 30px;
     line-height: 10px;
+    font-family: FiraFans;
+}
+
+.h2o{
+    font-size: 25px;
+    font-family: FiraFans;
+}
+
+h3{
+    font-weight: 200;
+    margin-top: 100px;
+    font-family: FiraFans;
+}
+
+h4{
+    font-size: 25px;
     font-family: FiraFans;
 }
 
@@ -80,7 +135,7 @@ h2{
     font:Fira Sans;
 }
 
-p{
+.text1{
     margin-top: 50px;
     text-align: justify;
     line-height: 20px;
@@ -89,13 +144,18 @@ p{
 }
 
 #img1{
-    width: 600px;
+    width: 400px;
+}
+
+.img2{
+    width: 100px;
+    margin-top: 20px;
 }
 
 form {
     display: flex;
-    gap: 10px; /* Espaço entre os inputs */
-    align-items: center; /* Alinha os inputs verticalmente */
+    gap: 10px;
+    align-items: center;
 }
 
 #submit, #Video {
@@ -115,7 +175,7 @@ form {
     color: #5AB18E;
 }
 #Video i {
-    margin-right: 10px; /* Espaço entre o ícone e o texto */
+    margin-right: 10px;
 }
 
 #submit{
@@ -136,10 +196,32 @@ form {
     cursor: pointer;
 }
 
+.submit2{
+    background-color: #ffffff;
+    display: flex;
+    margin: 0 auto;
+    width: 100px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    color: #5AB18E ;
+    font-family: poppinsbold;
+    font-size: 17px;
+}
+.submit2:hover{
+    transition: 0.3s all;
+    background-color: #396e59;
+    color: white;
+    cursor: pointer;
+}
+
+
+
 /* ---------------------------------- TEXT ---------------------------------- */
 
 #footer{
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
     padding: 10px;
 }
