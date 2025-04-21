@@ -2,12 +2,15 @@ body{
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     font-family: poppinsregular;
-    max-width: 80%;
-    margin: 0 auto;
-    padding: 10px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 header{
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -56,6 +59,9 @@ h1{
 /* ---------------------------------- TOPO ---------------------------------- */
 
 main{
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
     display: flex;
     flex-direction: row;
     margin-top: 100px;
@@ -131,10 +137,18 @@ form {
 }
 
 /* ---------------------------------- TEXT ---------------------------------- */
+
+#footer{
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
 footer {
-    background-color: rgb(34, 34, 34);
+    background-color: #222222;
     color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 300px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    margin-top: 500px;
+    width: 100%; 
 }
