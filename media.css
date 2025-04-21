@@ -38,31 +38,39 @@
             font-size: 25px;
             line-height: 5px;
         }
-        #submit{
-            width: 30%;
+        #destaque{
+            font-size: 40px;
         }
     }
     @media screen and (max-width: 640px) {
-        img {
+        #img1 {
             display: none;
         }
         h2{
             font-size: 23px;
-            line-height: 10px;
-        }
-        
+            line-height: 8px;
+        }   
     }
     @media screen and (max-width: 570px) {
         h2{
             font-size: 19px;
         }
+        #destaque{
+            font-size: 25px;
+        }
         #title{
             line-height: 20px;
+        }
+        #submit, #Video {
+            padding-left: 10px;
         }
     }
     @media screen and (max-width: 540px) {
         h2{
             font-size: 15px;
+        }
+        #destaque{
+            font-size: 33px;
         }
     }
 }
