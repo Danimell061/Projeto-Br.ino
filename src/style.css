@@ -396,17 +396,6 @@ footer {
 
 /* ---------------------------------- Daniel ---------------------------------- */
 
-.container-box-carrosel{
-    justify-content: center;
-    display: flex;
-    align-items: center; /* Centraliza horizontalmente */
-    text-align: center; /* Centraliza o texto */
-    flex-direction: column; /* Alinha os elementos verticalmente */
-}
-
-.container-box-carrosel h3{
-    margin-bottom: 5px;
-}
 
 .carrosel-container {
     position: relative;
