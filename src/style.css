@@ -101,7 +101,7 @@ main{
     box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
 }
 
-.box3 {
+.contato {
     margin: 0 auto;
     position: relative;
     display: flex;
@@ -114,7 +114,7 @@ main{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
-.box3 img {
+.contato img {
     position: relative;
     right: 25px;
     height: 550px;
@@ -269,6 +269,18 @@ h5{
     flex-direction: column; /* Alinha os elementos verticalmente */
 }
 
+.sobre{
+    justify-content: center;
+    display: flex;
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    flex-direction: column; /* Alinha os elementos verticalmente */
+}
+
+.sobre h3{
+    margin-bottom: 5px;
+}
+
 .BrInoMidia {
     width: 90%; /* Largura do retângulo */
     height: 1050px; /* Altura do retângulo */
@@ -292,7 +304,7 @@ h5{
 }
 
 .grid-imagens img {
-    width: 500px; /* Define uma largura fixa */
+    width: 450px; /* Define uma largura fixa */
     height: auto; /* Mantém a proporção da imagem */
     max-height: 300px; /* Define uma altura máxima para evitar desconfiguração */
     object-fit: cover; /* Ajusta a imagem para preencher o espaço sem distorção */
@@ -312,7 +324,9 @@ h5{
     font-family: poppinsbold;
     font-size: 17px;
     text-align: center;
+    cursor: pointer;
 }
+
 
 /* ---------------------------------- TEXT ---------------------------------- */
 
@@ -331,8 +345,53 @@ footer {
     width: 100%; 
 }
 
-/* ---------------------------------- CARROSSEL ---------------------------------- */
+/* ---------------------------------- ALLAN ---------------------------------- */
 
 .imagemCar{
     border-radius: 8px;
+}
+
+.textoContato {
+    margin-top: 70px;
+    width: 50%;
+}
+
+.submit3{
+    background-color: #5AB18E;
+    display: flex;
+    border: 1px white solid;
+    border-radius: 10px;
+    padding: 10px;
+    color: #ffffff ;
+    font-family: poppinsbold;
+    font-size: 17px;
+}
+.submit3:hover{
+    transition: 0.3s all;
+    background-color: #396e59;
+    color: white;
+    cursor: pointer;
+}
+
+.conteudoSobre {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    position: relative;
+    width: 80%;
+    border: 2px #5AB18E solid;
+    border-radius: 8px;
+    padding: 50px 50px;
+    padding-top: 80px;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.textoSobre {
+    width: 50%;
+}
+
+.conteudoSobre img {
+    width: 50%;
+    object-fit: contain;
 }
