@@ -88,6 +88,44 @@
             <img src="midia/OndeAtuamos.png" alt="OndeAtuamos" class="OndeAtuamos">
         </div>
 
+        <div class="container-box-carrosel">
+            <h3>ABOUT</h3>
+            <h5>Sobre a Br.ino</h5>
+        
+        
+        <div class="carrosel-container">      
+            <button class="arrow arrow-left" onclick="moveSlide(-1)">&#8592;</button>
+
+            <div class="carossel" id="animacao">
+
+                <div class="slide">
+                    <div class="slide-content">
+                        <h3>ESCOLAS</h3>
+                        <h2>Robótica Educacional</h2>
+                        <p>Korem ipsum dolor sit amet, consectetur adipiscing elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                        <button>Leia Mais</button>
+                    </div>
+                    <div class="slide-image" style="background-image: url('midia/teste.jpg');"></div>
+                </div>
+
+                <div class="slide">
+                    <div class="slide-image" style="background-image: url('midia/teste2.jpg');"></div>
+                    <div class="slide-content">
+                        <h3>ESCOLAS</h3>
+                        <h2>Programação para Jovens</h2>
+                        <p>Aprenda lógica, estrutura de dados e monte seus próprios robôs com kits de eletrônica e programação em grupo.</p>
+                        <button>Leia Mais</button>
+                    </div>
+                </div>
+
+            </div>
+            <button class="arrow arrow-right" onclick="moveSlide(1)">&#8594;</button>
+        </div>
+
+        <script src="script.js"></script>
+        
+        </div>
+
         <div class="contato">
             <img src="midia/brino2.png" alt="">
             <div class="textoContato">
@@ -154,7 +192,6 @@
                 <img src="midia/3sobre.png" alt="">
             </div>
         </div>
-
         <!-- <div id="carouselExample" class="carousel slide w-100 mx-auto p-2">
             <div class="carousel-indicators">
                 <button type="button" style="cursor: pointer;" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -188,6 +225,7 @@
     <footer>
         <div id="footer">
             <img src="midia/imgF.png" class="logo">
+            <br>
             <p>Copyright © 2025 For Rent All Rights Reseverd</p>
         </div>
     </footer>

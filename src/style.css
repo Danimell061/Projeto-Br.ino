@@ -393,3 +393,108 @@ footer {
     width: 50%;
     object-fit: contain;
 }
+
+/* ---------------------------------- Daniel ---------------------------------- */
+
+.container-box-carrosel{
+    justify-content: center;
+    display: flex;
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    flex-direction: column; /* Alinha os elementos verticalmente */
+}
+
+.container-box-carrosel h3{
+    margin-bottom: 5px;
+}
+
+.carrosel-container {
+    position: relative;
+    max-width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carossel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.slide-content {
+    position: flex;
+    width: 50%;
+    background-color: #4CAF90;
+    color: white;
+    height: 470px;
+    padding-left: 50px;
+    /* clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%); */
+}
+
+.slide-content h3 {
+    margin-top: 50px;
+    font-size: 14px;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+.slide-content h2 {
+    font-size: 26px;
+    margin: 10px 0 20px;
+}
+
+.slide-content p {
+    padding-right: 20px;
+    margin-top: 30px;
+    font-size: 14px;
+    line-height: 1.5;
+    opacity: 0.9;
+}
+
+.slide-content button {
+    padding: 10px 20px;
+    background-color: white;
+    color: #4CAF90;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.slide-image {
+    width: 60%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding-bottom: 3px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.arrow-left {
+    left: 5px;
+}
+
+.arrow-right {
+    right: 5px;
+}
