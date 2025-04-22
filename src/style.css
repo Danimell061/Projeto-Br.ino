@@ -269,6 +269,51 @@ h5{
     flex-direction: column; /* Alinha os elementos verticalmente */
 }
 
+.BrInoMidia {
+    width: 90%; /* Largura do retângulo */
+    height: 1050px; /* Altura do retângulo */
+    background-color: #5AB18E; /* Cor de fundo verde */
+    border-radius: 0px; /* Bordas arredondadas (opcional) */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    display: flex;
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    color: white;
+}
+
+.grid-imagens {
+    display: grid; /* Ativa o Grid */
+    grid-template-columns: 1fr 1fr; /* Define 2 colunas de tamanhos iguais */
+    grid-template-rows: auto auto; /* Define 2 linhas automáticas */
+    gap: 20px; /* Espaçamento entre as imagens */
+    justify-items: center; /* Centraliza as imagens horizontalmente */
+    align-items: center; /* Centraliza as imagens verticalmente */
+}
+
+.grid-imagens img {
+    width: 500px; /* Define uma largura fixa */
+    height: auto; /* Mantém a proporção da imagem */
+    max-height: 300px; /* Define uma altura máxima para evitar desconfiguração */
+    object-fit: cover; /* Ajusta a imagem para preencher o espaço sem distorção */
+    border-radius: 6px; /* Bordas arredondadas (opcional) */
+    margin: 10px; /* Espaçamento entre as imagens */
+}
+
+.vejamais{
+    background-color: #5AB18E;
+    margin: 0 auto;
+    width: 100px;
+    margin-top: 30px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    color: #ffffff ;
+    font-family: poppinsbold;
+    font-size: 17px;
+    text-align: center;
+}
+
 /* ---------------------------------- TEXT ---------------------------------- */
 
 #footer{
