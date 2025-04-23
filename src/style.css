@@ -615,7 +615,8 @@ footer {
 .slide-content button:hover {
     background-color: #396e59;
     color: white;
-    transition: 0.3s all;
+    transition: 0.5s all;
+    transform: translateY(-2px);
 }
 
 .slide-image {
