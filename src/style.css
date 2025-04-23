@@ -229,7 +229,8 @@ form {
     font-size: 17px;
 }
 .submit2:hover{
-    transition: 0.3s all;
+    transition: 0.5s all;
+    transform: translateY(-2px);
     background-color: #396e59;
     color: white;
     cursor: pointer;
@@ -325,6 +326,30 @@ h5{
     cursor: pointer;
 }
 
+.submit4{
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    color: #ffffff ;
+    border: 1px solid #ffffff;
+    font-family: poppinsbold;
+    font-size: 17px;
+}
+.submit4:hover{
+    transition: 0.5s all;
+    transform: translateY(-2px);
+    background-color: #396e59;
+    border-color: #396e59;
+    color: white;
+    cursor: pointer;
+}
+
 
 /* ---------------------------------- TEXT ---------------------------------- */
 
@@ -365,8 +390,10 @@ footer {
     font-size: 17px;
 }
 .submit3:hover{
-    transition: 0.3s all;
+    transition: 0.5s all;
+    transform: translateY(-2px);
     background-color: #396e59;
+    border-color: #396e59;
     color: white;
     cursor: pointer;
 }
