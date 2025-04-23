@@ -499,6 +499,39 @@ footer {
     font-size: 14px;
 }
 
+.conteudoDepoimentos{
+    display: flex;
+    margin: auto;
+    margin-bottom: 90px;
+    width: 90%;
+}
+
+.areasDepoimento{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: #56b48f 2px solid;
+    border-radius: 8px;
+    width: 320px;
+    height: 250px;
+    padding: 30px 20px 20px 15px;
+    margin: 20px;
+    text-align: start;
+}
+
+.pessoaDepoimento{
+    display: flex;
+    flex-direction: row; /* Alinha os elementos na vertical */
+    align-items: center;     /* centraliza horizontalmente */
+     text-align: center; 
+}
+
+.pessoaDepoimento div{
+    display: flex;
+    flex-direction: column; /* Alinha os elementos na vertical */
+    align-items: start;     /* centraliza horizontalmente */
+    margin-left: 20px;
+}
 /* ---------------------------------- Daniel ---------------------------------- */
 
 
