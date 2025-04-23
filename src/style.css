@@ -74,6 +74,46 @@ main{
     padding: 50px 100px;
 }
 
+#main3{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+#main3 img{
+    width: 450px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+#main3 p{  
+    width: 400px;
+    text-align: justify;
+    line-height: 20px;
+    font-family: poppinslight;
+
+}
+
+.submit5{
+    background-color: #5AB18E;
+    display: flex;
+    border: 1px white solid;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: #ffffff ;
+    font-family: poppinsbold;
+    font-size: 17px;
+}
+.submit5:hover{
+    transition: 0.5s all;
+    transform: translateY(-2px);
+    background-color: #396e59;
+    border-color: #396e59;
+    color: white;
+    cursor: pointer;
+}
+
 .box {
     margin: 0 auto;
     width: 90%;
