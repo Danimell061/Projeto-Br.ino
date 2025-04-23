@@ -292,6 +292,9 @@ h5{
     flex-direction: column; /* Alinha os elementos verticalmente */
     color: white;
 }
+.BrInoMidia h3{
+    margin-bottom: 5px;
+}
 
 .grid-imagens {
     display: grid; /* Ativa o Grid */
@@ -460,7 +463,7 @@ footer {
     justify-content: space-around;
     height: 350px;
     width: 90%;
-    margin-top: 250px;
+    margin-top: 150px;
     background-color: #5AB18E;
     color: white;
     border: 1px solid #ddd; 
