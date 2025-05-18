@@ -1,8 +1,7 @@
+// Carrossel
 let index = 0;
-
 const carousel = document.getElementById("animacao");
 const slides = document.querySelectorAll(".slide");
-
 function moveSlide(direction) {
     index += direction;
     if (index < 0) index = slides.length - 1;

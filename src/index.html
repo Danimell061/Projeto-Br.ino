@@ -7,9 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="media.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="main.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -126,7 +125,7 @@
             <button class="arrow arrow-right" onclick="moveSlide(1)">&#10095</button>
         </div>
 
-        <script src="script.js"></script>
+        
 
         <div class="sobre">
             <h3>ABOUT</h3>
@@ -314,7 +313,7 @@
             </div>
             <div id="areaFormContato">
                 <h2>Entre em contato</h2>
-                <form id="formContato">
+                <form id="formContato" action="/contato" method="POST">
                     <input type="text" name="nomeCompleto" id="nomeCompleto" placeholder="Nome completo" class="formContatoInputs"></input>
                     <input type="email" name="email" id="email" placeholder="Email" class="formContatoInputs"></input>
                     <input type="tel" name="telefone" id="telefone" placeholder="Telefone / WhatsApp" class="formContatoInputs"></input>
@@ -323,6 +322,8 @@
                 </form>
             </div>
         </div>
+
+        <script src="script.js"></script>
     </main>
     <footer>
         <div id="footer">
