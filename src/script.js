@@ -8,6 +8,7 @@ function moveSlide(direction) {
     if (index >= slides.length) index = 0;
     carousel.style.transform = `translateX(${-index * 100}%)`;
 }
+// Formulário
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('formContato');
     if (form) {
