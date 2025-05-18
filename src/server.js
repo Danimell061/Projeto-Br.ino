@@ -41,7 +41,8 @@ app.get('/', (req, res) => {
 app.post("/contato", async (req, res) => {
   try {
     const novoFormulario = await Formulario.create(req.body);
-    res.json(novoFormulario);
+    // res.json(novoFormulario);
+    res.status(201).json({ message: "Mensagem enviada com sucesso!" });
     console.log("Dados recebidos:", req.body);
   }catch (error) {
     console.error("Erro ao salvar no MongoDB", error);
