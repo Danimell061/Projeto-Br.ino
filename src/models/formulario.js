@@ -33,5 +33,7 @@ formularioSchema.pre('save', function(next){
     });
 });
 
-export default mongoose.model('Formulario', formularioSchema);
-export const Contador = mongoose.model('Contador', contadorSchema);
+const Contador = mongoose.model('Contador', contadorSchema)
+const Formulario = mongoose.model('Formulario', formularioSchema)
+
+export default Formulario;
