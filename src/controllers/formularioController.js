@@ -1,4 +1,4 @@
-import Formulario from "../models/formulario.js";
+import Formulario from "../models/formularioModel.js";
 
 const listarFormularios = async (req, res)=>{
     try{
