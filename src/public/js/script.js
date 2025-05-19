@@ -47,7 +47,21 @@ form.addEventListener('submit', (event)=>{
     // Manda as informações
     try{
         xhr.send(JSON.stringify(data))
+        alert('Obrigado! As informações foram enviadas')
+    
     }catch(e){
         console.log('ERRO! ' + e)
     }
+    
+    limparFormulario(form)
 })
+
+function limparFormulario(form){
+    const elementos = form.children
+
+    for(let elemento of elementos){
+        if(elemento.type !== 'submit'){
+            elemento.value = ""
+        }
+    }
+}
