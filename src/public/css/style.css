@@ -486,13 +486,12 @@ footer {
 }
 
 #formContato textarea{
+    font-family: Arial;
     width: 100%;
-    padding: 8px;
-    padding-left: 25px;
+    padding: 20px 25px;
     border: none;
     background-color: #D9D9D933;
     border-radius: 8px;
-    padding-top: 20px;
     margin-bottom: 15px;
 }
 
