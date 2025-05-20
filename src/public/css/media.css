@@ -9,6 +9,9 @@
         display: flex;
         margin-top: 50px;
     }
+    .grid-imagens img {
+        max-width: 300px;
+    }
     @media screen and (max-width: 1210px) {
     header {
         display: flex;
@@ -29,27 +32,37 @@
     img{
         display: flex;
         align-items: center;
-        margin-top: 60px;
+        /* margin-top: 60px; */
         width: 70%;
+        height: auto;
     }
     }
     @media screen and (max-width: 760px) {
         h2{
             font-size: 25px;
-            line-height: 5px;
+            /* line-height: 5px; */
         }
         #destaque{
             font-size: 40px;
         }
     }
     @media screen and (max-width: 640px) {
-        #img1 {
+        /* #img1 {
             display: none;
+        } */
+        #main {
+            flex-direction: column;
+        }
+        #main2 {
+            flex-direction: column;
         }
         h2{
             font-size: 23px;
-            line-height: 8px;
+            /* line-height: 8px; */
         }   
+        .conteudoDepoimentos {
+            flex-direction: column;
+        }
     }
     @media screen and (max-width: 570px) {
         h2{
@@ -58,11 +71,14 @@
         #destaque{
             font-size: 25px;
         }
-        #title{
+        /* #title{
             line-height: 20px;
-        }
-        #submit, #Video {
+        } */
+        /* #submit, #Video {
             padding-left: 10px;
+        } */
+        .slide {
+            flex-direction: column;
         }
     }
     @media screen and (max-width: 540px) {
@@ -71,6 +87,15 @@
         }
         #destaque{
             font-size: 33px;
+        }
+        #main3 {
+            flex-direction: column;
+        }
+        .contato {
+            flex-direction: column;
+        }
+        .textoContato {
+            width: unset;
         }
     }
 }

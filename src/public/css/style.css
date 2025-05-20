@@ -1,7 +1,12 @@
+* {
+    font-family: sans-serif;
+    padding: 0;
+}
+
 body{
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-    font-family: poppinsregular;
+    /* font-family: poppinsregular; */
     width: 100%;
     margin: 0;
     padding: 0;
@@ -24,7 +29,7 @@ header{
 
 #title{
     flex-direction: column;
-    line-height: 10px;
+    /* line-height: 10px; */
 }
 
 li{
@@ -55,7 +60,8 @@ li{
 /* ---------------------------------- TOPO ---------------------------------- */
 
 main{
-    width: 60%;
+    width: 90%;
+    max-width: 800px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -64,34 +70,38 @@ main{
 
 #main{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    gap: 30px;
     align-items: center;
 }
 
 #main2{
     display: flex;
     align-items: center;
-    padding: 50px 100px;
+    padding: 0px 10px;
+    gap: 15px;
 }
 
 #main3{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    gap: 15px;
     margin-bottom: 100px;
 }
 
 #main3 img{
-    width: 450px;
-    object-fit: contain;
+    width: 100%;
+    max-width: 400px;
+    /* object-fit: contain; */
     border-radius: 10px;
 }
 
 #main3 p{  
-    width: 400px;
+    /* width: 400px; */
     text-align: justify;
-    line-height: 20px;
-    font-family: poppinslight;
+    /* line-height: 20px; */
+    /* font-family: poppinslight; */
 
 }
 
@@ -102,7 +112,7 @@ main{
     border-radius: 10px;
     padding: 10px 20px;
     color: #ffffff ;
-    font-family: poppinsbold;
+    /* font-family: poppinsbold; */
     font-size: 17px;
 }
 .submit5:hover{
@@ -116,7 +126,7 @@ main{
 
 .box {
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
     margin-top: 150px;
     text-align: center;
     background-color: #5AB18E;
@@ -128,8 +138,8 @@ main{
 
 .box2 {
     margin: 0 auto;
-    width: 200px;
-    height: 300px;
+    /* width: 200px; */
+    /* height: 300px; */
     padding: 0 10 20 10px;
     margin-bottom: 50px;
     text-align: center;
@@ -140,86 +150,99 @@ main{
 }
 
 .contato {
-    margin: 0 auto;
-    position: relative;
+    /* margin: 0 auto; */
+    /* position: relative; */
     display: flex;
-    height: 350px;
-    width: 90%;
+    /* height: 350px; */
+    /* width: 100%; */
     margin-top: 250px;
     background-color: #5AB18E;
     color: white;
     border: 1px solid #ddd; 
+    justify-content: center;
+    align-items: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
+.contato p {
+    padding-right: 15px;
+}
+
 .contato img {
-    position: relative;
-    right: 25px;
-    height: 550px;
-    bottom: 145px;
+    /* position: relative; */
+    /* right: 25px; */
+    /* height: 550px; */
+    /* bottom: 145px; */
 }
 
 
 h1{
-    line-height: 8px;
+    /* line-height: 8px; */
     font-size: 40px;
-    font-family: FiraFans;
+    /* font-family: FiraFans; */
 }
 
 h2{
     font-size: 30px;
-    line-height: 10px;
-    font-family: FiraFans;
+    /* line-height: 10px; */
+    /* font-family: FiraFans; */
 }
 
 .h2o{
     font-size: 25px;
-    font-family: FiraFans;
+    /* font-family: FiraFans; */
 }
 
 h3{
     font-weight: 200;
     margin-top: 100px;
-    font-family: FiraFans;
+    /* font-family: FiraFans; */
 }
 
 h4{
     font-size: 25px;
-    font-family: FiraFans;
+    /* font-family: FiraFans; */
+}
+
+h2.intro-title {
+    margin: 0;
 }
 
 #destaque{
     color: #5AB18E;
     font-size: 50px;
-    font:Fira Sans;
+    /* font:Fira Sans; */
+    font-weight: bold;
 }
 
 .text1{
     margin-top: 50px;
     text-align: justify;
-    line-height: 20px;
+    /* line-height: 20px; */
     max-width: 500px;
-    font-family: poppinslight;
+    /* font-family: poppinslight; */
 }
 
 #img1{
-    width: 400px;
+    width: 100%;
+    max-width: 450px;
 }
 
 .img2{
     width: 100px;
-    margin-top: 20px;
+    display: block;
+    margin: 20 auto;
 }
 
-form {
+#main form {
     display: flex;
     gap: 10px;
     align-items: center;
 }
 
-#submit, #Video {
+/* #submit, #Video {
     padding-left: 150px;
-}
+} */
 
 #video{
     margin-top: 30px;
@@ -246,7 +269,7 @@ form {
     border-radius: 10px;
     padding: 15px;
     color: rgb(0, 0, 0);
-    font-family: ppoppinsmedium;
+    /* font-family: ppoppinsmedium; */
     font-size: 17px;
 }
 #submit:hover{
@@ -265,7 +288,7 @@ form {
     border-radius: 10px;
     padding: 10px;
     color: #5AB18E ;
-    font-family: poppinsbold;
+    /* font-family: poppinsbold; */
     font-size: 17px;
 }
 .submit2:hover{
@@ -277,7 +300,7 @@ form {
 }
 
 h5{
-    font-family: FiraFans;
+    /* font-family: FiraFans; */
     font-size: 40px;
     margin-top: 0px;
 }
@@ -322,7 +345,7 @@ h5{
 
 .BrInoMidia {
     width: 90%; /* Largura do retângulo */
-    height: 1050px; /* Altura do retângulo */
+    /* height: 1050px;  */
     background-color: #5AB18E; /* Cor de fundo verde */
     border-radius: 0px; /* Bordas arredondadas (opcional) */
     margin: 0 auto; /* Centraliza horizontalmente */
@@ -346,7 +369,7 @@ h5{
 }
 
 .grid-imagens img {
-    width: 450px; /* Define uma largura fixa */
+    max-width: 450px; 
     height: auto; /* Mantém a proporção da imagem */
     max-height: 300px; /* Define uma altura máxima para evitar desconfiguração */
     object-fit: cover; /* Ajusta a imagem para preencher o espaço sem distorção */
@@ -366,7 +389,7 @@ h5{
     padding: 10px;
     color: #ffffff ;
     border: 1px solid #ffffff;
-    font-family: poppinsbold;
+    /* font-family: poppinsbold; */
     font-size: 17px;
 }
 .submit4:hover{
@@ -403,7 +426,7 @@ footer {
 }
 
 .textoContato {
-    margin-top: 70px;
+    /* margin-top: 70px; */
     width: 50%;
 }
 
@@ -414,7 +437,7 @@ footer {
     border-radius: 10px;
     padding: 10px;
     color: #ffffff ;
-    font-family: poppinsbold;
+    /* font-family: poppinsbold; */
     font-size: 17px;
 }
 .submit3:hover{
@@ -451,11 +474,12 @@ footer {
 
 #areaFormContato{
     display: flex;
+    min-width: 200px;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     background-color: white;
-    height: 570px;
+    /* height: 570px; */
     padding: 20px;
     margin: 20px;
     border-radius: 8px;
@@ -486,7 +510,7 @@ footer {
 }
 
 #formContato textarea{
-    font-family: Arial;
+    /* font-family: Arial; */
     width: 100%;
     padding: 20px 25px;
     border: none;
@@ -497,10 +521,10 @@ footer {
 
 .contato2 {
     margin: 0 auto;
-    position: relative;
+    /* position: relative; */
     display: flex;
     justify-content: space-around;
-    height: 350px;
+    /* height: 350px; */
     width: 90%;
     margin-top: 150px;
     background-color: #5AB18E;
@@ -510,11 +534,12 @@ footer {
 }
 
 .textoContato2 {
+    flex: auto;
     margin-top: 70px;
     padding-left: 20px;
     display: flex;
     flex-direction: column;
-    width: 40%;
+    /* width: 40%; */
     
 }
 
@@ -558,6 +583,9 @@ footer {
     margin: auto;
     margin-bottom: 90px;
     width: 90%;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
 }
 
 .areasDepoimento{
@@ -566,18 +594,18 @@ footer {
     justify-content: space-between;
     border: #56b48f 2px solid;
     border-radius: 8px;
-    width: 320px;
-    height: 250px;
+    max-width: 320px;
+    /* height: 250px; */
     padding: 30px 20px 20px 15px;
-    margin: 20px;
+    /* margin: 20px; */
     text-align: start;
 }
 
 .pessoaDepoimento{
     display: flex;
-    flex-direction: row; /* Alinha os elementos na vertical */
+    flex-direction: column; /* Alinha os elementos na vertical */
     align-items: center;     /* centraliza horizontalmente */
-     text-align: center; 
+    text-align: center; 
 }
 
 .pessoaDepoimento div{
@@ -647,7 +675,7 @@ footer {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-family: poppinsbold;
+    /* font-family: poppinsbold; */
     font-size: 17px;
 }
 
