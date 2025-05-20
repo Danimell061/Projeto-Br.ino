@@ -1,101 +1,147 @@
-@media screen and (max-width: 1490px) {
-    main {
-        display: flex;
+@media (min-width: 768px) {
+
+    .hero {
+        flex-direction: row;
+        gap: 3rem;
+    }
+    
+    .nav-menu {
+        flex-wrap: nowrap;
+    }
+    
+    .client-boxes {
+        flex-direction: row;
+    }
+    
+    .media-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+
+    .container {
+        max-width: 960px;
+    }
+    
+    .product-item, 
+    .about-card {
+        flex-direction: row;
+    }
+    
+    .product-item.reverse {
+        flex-direction: row-reverse;
+    }
+    
+    .testimonial-grid {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .carousel-slide {
+        flex-direction: row;
+        height: 500px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .container {
+        max-width: 1200px;
+    }
+    
+    .hero {
+        margin: 5rem 0;
+    }
+    
+    .section-title {
+        font-size: 2.5rem;
+    }
+    
+    .highlight-text {
+        font-size: 3rem;
+    }
+    
+    .contact-section {
+        gap: 3rem;
+    }
+}
+
+
+@media (max-width: 767px) {
+   
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .highlight-text {
+        font-size: 2rem;
+    }
+    
+
+    .slide-image {
+        height: 200px;
+    }
+    
+
+    .testimonial-grid {
         flex-direction: column;
-        justify-content: center;
         align-items: center;
     }
-    article {
-        display: flex;
-        margin-top: 50px;
+    
+    .testimonial-card {
+        max-width: 100%;
+        margin-bottom: 1.5rem;
     }
-    .grid-imagens img {
-        max-width: 300px;
-    }
-    @media screen and (max-width: 1210px) {
-    header {
-        display: flex;
+    
+
+    .contact-section {
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
-    main{
-        display: flex;
+    
+    .contact-info, 
+    .contact-form-container {
+        width: 100%;
+        padding: 1rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.3rem;
+    }
+    
+    .highlight-text {
+        font-size: 1.8rem;
+    }
+    
+    .action-buttons {
         flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .btn-video {
+        margin-left: 0;
         justify-content: center;
-        align-items: center;
-        margin-top: 50px;
     }
-    #submit{
-        align-self: center;
+    
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: flex-start;
     }
-    img{
-        display: flex;
-        align-items: center;
-        /* margin-top: 60px; */
-        width: 70%;
-        height: auto;
+    
+    .nav-link {
+        margin: 0.25rem 0;
     }
+    
+
+    .client-boxes {
+        flex-direction: column;
     }
-    @media screen and (max-width: 760px) {
-        h2{
-            font-size: 25px;
-            /* line-height: 5px; */
-        }
-        #destaque{
-            font-size: 40px;
-        }
-    }
-    @media screen and (max-width: 640px) {
-        /* #img1 {
-            display: none;
-        } */
-        #main {
-            flex-direction: column;
-        }
-        #main2 {
-            flex-direction: column;
-        }
-        h2{
-            font-size: 23px;
-            /* line-height: 8px; */
-        }   
-        .conteudoDepoimentos {
-            flex-direction: column;
-        }
-    }
-    @media screen and (max-width: 570px) {
-        h2{
-            font-size: 19px;
-        }
-        #destaque{
-            font-size: 25px;
-        }
-        /* #title{
-            line-height: 20px;
-        } */
-        /* #submit, #Video {
-            padding-left: 10px;
-        } */
-        .slide {
-            flex-direction: column;
-        }
-    }
-    @media screen and (max-width: 540px) {
-        h2{
-            font-size: 15px;
-        }
-        #destaque{
-            font-size: 33px;
-        }
-        #main3 {
-            flex-direction: column;
-        }
-        .contato {
-            flex-direction: column;
-        }
-        .textoContato {
-            width: unset;
-        }
+    
+    .client-box {
+        margin-bottom: 1rem;
     }
 }

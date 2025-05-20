@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -10,328 +11,299 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div id="title">
+    <header class="container">
+        <div class="logo-container">
             <a href="index.html">
-               <img src="img/logo.png" class="logo">
+               <img src="img/logo.png" class="logo" alt="Brino Logo">
             </a>
         </div>
 
-        <ul>
-            <a class="nav" href=" "><li>Loja</li></a>
-            <a class="nav" href=" "><li>Escolas</li></a>
-            <a class="nav" href=" "><li>Alunos</li></a>
-            <a class="nav" href=" "><li>Governo</li></a>
-            <a class="nav" href=" "><li>Sobre nós </li></a>
-            <a class="nav" href=" " id="Especial"><li>Entre em Contato</li></a>
-        </ul>
+        <nav>
+            <ul class="nav-menu">
+                <li><a class="nav-link" href="#">Loja</a></li>
+                <li><a class="nav-link" href="#">Escolas</a></li>
+                <li><a class="nav-link" href="#">Alunos</a></li>
+                <li><a class="nav-link" href="#">Governo</a></li>
+                <li><a class="nav-link" href="#">Sobre nós</a></li>
+                <li><a class="nav-link btn-contact" href="#">Entre em Contato</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <div id="main">
-            <aside>
-                <h2 class="intro-title">Conheça a grande Startup de Robotica</h2>
-                <div><span id="destaque">Br.ino</span></div>
-                <p class="text1">
+    
+    <main class="container">
+        <section class="hero">
+            <div class="hero-content">
+                <h2 class="section-title">Conheça a grande Startup de Robótica</h2>
+                <div class="highlight-text">Br.ino</div>
+                <p class="text-content">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quaerat doloremque quas. 
                     Quam, sit voluptatem similique doloremque illum, quibusdam nulla odit assumenda nostrum perspiciatis 
-                    deleniti dolorum nobis iusto laborum sed. 
+                    deleniti dolorum nobis iusto laborum sed.
                 </p>
-                <form action="">
-                    <input type="submit" id="submit" value="Envie uma mensagem">
-                    <a id="Video"><i class="fas fa-play"></i> Assista o video</a>
-                </form>
-            </aside>
-
-            <div>
-                <img src="./img/one.png" alt="One" id="img1">
-            </div>
-        </div>
-
-        <div class="box" >
-            <h3>CLIENTES</h3>
-            <h1>Onde o Br.ino atua</h1>
-            <div id="main2">
-                <div class="box2">
-                    <img src="img/pessoas.png" class="img2">
-                    <h2><span class="h2o">Pessoas</span></h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <form action="">
-                        <input type="submit" class="submit2" value="Acessar">
-                    </form>
-                </div>
-
-                <div class="box2">
-                    <img src="img/escola.png" class="img2">
-                    <h2><span class="h2o">Escolas</span></h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <form action="">
-                        <input type="submit" class="submit2" value="Acessar">
-                    </form>
-                </div>
-
-                <div class="box2">
-                    <img src="img/gov.png" class="img2">
-                    <h2><span class="h2o">Governo</span></h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <form action="">
-                        <input type="submit" class="submit2" value="Acessar">
-                    </form>
+                <div class="action-buttons">
+                    <button type="button" class="btn btn-primary">Envie uma mensagem</button>
+                    <a href="#" class="btn-video"><i class="fas fa-play"></i> Assista o video</a>
                 </div>
             </div>
-        </div>
 
-        <div class = "portifolio">
-            <h3>PORTIFÓLIO</h3>
-            <h5>Onde já atuamos</h5>
-            <img src="img/OndeAtuamos.png" alt="OndeAtuamos" class="OndeAtuamos">
-        </div>
+            <div class="hero-image">
+                <img src="./img/one.png" alt="Robot" class="img-responsive">
+            </div>
+        </section>
 
-        <div class="sobre">
-            <h3>ABOUT</h3>
-            <h5>Sobre a Br.ino</h5>
-        </div>
-        
-        <div class="carrosel-container">      
-            <button class="arrow arrow-left" onclick="moveSlide(-1)">&#10094</button>
+        <section class="clients">
+            <h3 class="section-subtitle">CLIENTES</h3>
+            <h1 class="section-title">Onde o Br.ino atua</h1>
+            <div class="client-boxes">
+                <div class="client-box">
+                    <img src="img/pessoas.png" class="client-icon" alt="Pessoas">
+                    <h2 class="box-title">Pessoas</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <button type="button" class="btn btn-secondary">Acessar</button>
+                </div>
 
-            <div class="carossel" id="animacao">
+                <div class="client-box">
+                    <img src="img/escola.png" class="client-icon" alt="Escolas">
+                    <h2 class="box-title">Escolas</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <button type="button" class="btn btn-secondary">Acessar</button>
+                </div>
 
-                <div class="slide">
-                    <div class="slide-content">
-                        <h3>ESCOLAS</h3>
-                        <h2>Robótica Educacional</h2>
-                        <p>Korem ipsum dolor sit amet, consectetur adipiscing elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                        <form action="">
-                            <button>Leia Mais</button>
-                        </form>
+                <div class="client-box">
+                    <img src="img/gov.png" class="client-icon" alt="Governo">
+                    <h2 class="box-title">Governo</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <button type="button" class="btn btn-secondary">Acessar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio">
+            <h3 class="section-subtitle">PORTIFÓLIO</h3>
+            <h2 class="section-title">Onde já atuamos</h2>
+            <img src="img/OndeAtuamos.png" alt="Mapa de Atuação" class="img-portfolio">
+        </section>
+
+        <section class="carousel-section">
+            <h3 class="section-subtitle">SERVIÇOS</h3>
+            <h2 class="section-title">O que oferecemos</h2>
+            
+            <div class="carousel-container">      
+                <button class="carousel-arrow arrow-left" aria-label="Anterior" onclick="moveSlide(-1)">&#10094;</button>
+
+                <div class="carousel" id="animacao">
+                    <div class="carousel-slide">
+                        <div class="slide-content">
+                            <h3>ESCOLAS</h3>
+                            <h2>Robótica Educacional</h2>
+                            <p>Korem ipsum dolor sit amet, consectetur adipiscing elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                            <button type="button" class="btn btn-light">Leia Mais</button>
+                        </div>
+                        <div class="slide-image" style="background-image: url('img/teste.jpg');"></div>
                     </div>
-                    <div class="slide-image" style="background-image: url('img/teste.jpg');"></div>
-                </div>
 
-                <div class="slide">
-                    <div class="slide-image" style="background-image: url('img/teste2.jpg');"></div>
-                    <div class="slide-content">
-                        <h3>ESCOLAS</h3>
-                        <h2>Programação para Jovens</h2>
-                        <p>Aprenda lógica, estrutura de dados e monte seus próprios robôs com kits de eletrônica e programação em grupo.</p>
-                        <form action="">
-                            <button>Leia Mais</button>
-                        </form>
+                    <div class="carousel-slide">
+                        <div class="slide-image" style="background-image: url('img/teste2.jpg');"></div>
+                        <div class="slide-content">
+                            <h3>ESCOLAS</h3>
+                            <h2>Programação para Jovens</h2>
+                            <p>Aprenda lógica, estrutura de dados e monte seus próprios robôs com kits de eletrônica e programação em grupo.</p>
+                            <button type="button" class="btn btn-light">Leia Mais</button>
+                        </div>
                     </div>
                 </div>
-
+                <button class="carousel-arrow arrow-right" aria-label="Próximo" onclick="moveSlide(1)">&#10095;</button>
             </div>
-            <button class="arrow arrow-right" onclick="moveSlide(1)">&#10095</button>
-        </div>
+        </section>
 
-        
+        <section class="products">
+            <h3 class="section-subtitle">PRODUTOS</h3>
+            <h2 class="section-title">Nossos Produtos</h2>
 
-        <div class="sobre">
-            <h3>ABOUT</h3>
-            <h5>Sobre a Br.ino</h5>
-        </div>
-
-        <div id="main3">
-            <aside>
-                <h2><span id="destaque">Cursos</span></h2>
-                <p class="text1">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quaerat doloremque quas. 
-                    Quam, sit voluptatem similique doloremque illum, quibusdam nulla odit assumenda nostrum perspiciatis 
-                    deleniti dolorum nobis iusto laborum sed. 
-                </p>
-                <form action="">
-                    <input type="submit" class="submit5" value="Saiba mais">
-                </form>
-            </aside>
-
-            <div>
-                <img src="./img/123.jpg" alt="One" id="img1">
+            <div class="product-item">
+                <div class="product-content">
+                    <h2 class="highlight-text">Cursos</h2>
+                    <p class="text-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quaerat doloremque quas. 
+                        Quam, sit voluptatem similique doloremque illum, quibusdam nulla odit assumenda nostrum perspiciatis 
+                        deleniti dolorum nobis iusto laborum sed.
+                    </p>
+                    <button type="button" class="btn btn-primary">Saiba mais</button>
+                </div>
+                <div class="product-image">
+                    <img src="./img/123.jpg" alt="Cursos" class="img-responsive">
+                </div>
             </div>
-        </div>
 
-        <div id="main3">
-            <article>
-                <img src="./img/213.jpg" alt="One" id="img1">
-            </article>
-            <aside>
-                <h2><span id="destaque">Kits</span></h2>
-                <p class="text1">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quaerat doloremque quas. 
-                    Quam, sit voluptatem similique doloremque illum, quibusdam nulla odit assumenda nostrum perspiciatis 
-                    deleniti dolorum nobis iusto laborum sed. 
-                </p>
-                <form action="">
-                    <input type="submit" class="submit5" value="Saiba mais">
-                </form>
-            </aside>
-        </div>
-
-        <div id="main3">
-            <aside>
-                <h2><span id="destaque">Livros</span></h2>
-                <p class="text1">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quaerat doloremque quas. 
-                    Quam, sit voluptatem similique doloremque illum, quibusdam nulla odit assumenda nostrum perspiciatis 
-                    deleniti dolorum nobis iusto laborum sed. 
-                </p>
-                <form action="">
-                    <input type="submit" class="submit5" value="Saiba mais">
-                </form>
-            </aside>
-
-            <article>
-                <img src="./img/321.png" alt="One" id="img1">
-            </article>
-        </div>
-
-        <div class="contato">
-            <div class="textoContato">
-                <img src="img/brino2.png" alt="">
+            <div class="product-item reverse">
+                <div class="product-image">
+                    <img src="./img/213.jpg" alt="Kits" class="img-responsive">
+                </div>
+                <div class="product-content">
+                    <h2 class="highlight-text">Kits</h2>
+                    <p class="text-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quaerat doloremque quas. 
+                        Quam, sit voluptatem similique doloremque illum, quibusdam nulla odit assumenda nostrum perspiciatis 
+                        deleniti dolorum nobis iusto laborum sed.
+                    </p>
+                    <button type="button" class="btn btn-primary">Saiba mais</button>
+                </div>
             </div>
-            <div class="textoContato">
-                <h2><span class="h2">Entre em contato</span></h2>
-                <p>Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.  sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                <form action="">
-                    <input type="submit" class="submit3" value="Envie uma mensagem">
-                </form>
-            </div>
-        </div>
 
-        <div class = "depoimentos">
-            <h3>DEPOIMENTOS</h3>
-            <h5>Oque as pessoas falam sobre a Br.ino</h5>
-            <div class="conteudoDepoimentos">
-                <div class="areasDepoimento">
-                    <div class="pessoaDepoimento">
-                        <img src="img/user1.png" alt="" width="96">
-                        <div>
+            <div class="product-item">
+                <div class="product-content">
+                    <h2 class="highlight-text">Livros</h2>
+                    <p class="text-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quaerat doloremque quas. 
+                        Quam, sit voluptatem similique doloremque illum, quibusdam nulla odit assumenda nostrum perspiciatis 
+                        deleniti dolorum nobis iusto laborum sed.
+                    </p>
+                    <button type="button" class="btn btn-primary">Saiba mais</button>
+                </div>
+                <div class="product-image">
+                    <img src="./img/321.png" alt="Livros" class="img-responsive">
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-banner">
+            <div class="cta-image">
+                <img src="img/brino2.png" alt="Brino Logo" class="img-responsive">
+            </div>
+            <div class="cta-content">
+                <h2 class="section-title">Entre em contato</h2>
+                <p>Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                <button type="button" class="btn btn-light">Envie uma mensagem</button>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h3 class="section-subtitle">DEPOIMENTOS</h3>
+            <h2 class="section-title">O que as pessoas falam sobre a Br.ino</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-author">
+                        <img src="img/user1.png" alt="Allan Marti" width="96">
+                        <div class="author-info">
                             <strong>Allan Marti</strong>
                             <span>Aluno</span>
                         </div>
-                        
                     </div>
-
                     <p>Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per</p>
                 </div>
-                <div class="areasDepoimento">
-                    <div class="pessoaDepoimento">
-                        <img src="img/user2.png" alt="" width="96">
-                        <div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-author">
+                        <img src="img/user2.png" alt="Leonardo da Vincios" width="96">
+                        <div class="author-info">
                             <strong>Leonardo da Vincios</strong>
                             <span>Escola</span>
                         </div>
                     </div>
-
                     <p>Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per</p>
                 </div>
-                <div class="areasDepoimento">
-                    <div class="pessoaDepoimento">
-                        <img src="img/user3.png" alt="" width="96">
-                        <div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-author">
+                        <img src="img/user3.png" alt="Marcos Vinicius" width="96">
+                        <div class="author-info">
                             <strong>Marcos Vinicius</strong>
                             <span>Governo</span>
                         </div>
-                        
                     </div>
-
                     <p>Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per</p>
                 </div>
             </div>
-        </div>
+        </section>
 
-
-
-        <div class="BrInoMidia">
-            <h3>CLIPPING</h3>
-            <h5> Br.ino na mídia </h5> 
-            <div class="grid-imagens">
-            <img src="img/brinomidia1.png" alt="">
-            <img src="img/brinomidia2.png" alt="">
-            <img src="img/brinomidia3.png" alt="">
-            <img src="img/brinomidia4.png" alt="">
+        <section class="media">
+            <h3 class="section-subtitle">CLIPPING</h3>
+            <h2 class="section-title">Br.ino na mídia</h2> 
+            <div class="media-grid">
+                <img src="img/brinomidia1.png" alt="Mídia 1">
+                <img src="img/brinomidia2.png" alt="Mídia 2">
+                <img src="img/brinomidia3.png" alt="Mídia 3">
+                <img src="img/brinomidia4.png" alt="Mídia 4">
             </div>
-            <form action="">
-                <button class="submit4">Veja mais</button>
-            </form>
-        </div>
+            <button type="button" class="btn btn-outline">Veja mais</button>
+        </section>
 
-        <div class="sobre">
-            <h3>ABOUT</h3>
-            <h5>Sobre a Br.ino</h5>
-            <div class="conteudoSobre">
-                <div class="textoSobre" >
-                    <h2><span class="h2" style="color: #5AB18E;">Pessoas</span></h2>
-                    <p>Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.  sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                    <form action="">
-                        <input type="submit" class="submit3" value="Saiba mais">
-                    </form>
+        <section class="about">
+            <h3 class="section-subtitle">SOBRE</h3>
+            <h2 class="section-title">Sobre a Br.ino</h2>
+            
+            <div class="about-card">
+                <div class="about-content">
+                    <h2 class="card-title">Pessoas</h2>
+                    <p>Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                    <button type="button" class="btn btn-primary">Saiba mais</button>
                 </div>
-                <img src="img/1sobre.png" alt="">
+                <img src="img/1sobre.png" alt="Pessoas" class="about-image">
             </div>
 
-            <div class="conteudoSobre">
-                <div class="textoSobre" >
-                    <h2><span class="h2" style="color: #5AB18E;">Escolas</span></h2>
-                    <p>Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.  sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                    <form action="">
-                        <input type="submit" class="submit3" value="Saiba mais">
-                    </form>
+            <div class="about-card">
+                <div class="about-content">
+                    <h2 class="card-title">Escolas</h2>
+                    <p>Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                    <button type="button" class="btn btn-primary">Saiba mais</button>
                 </div>
-                <img src="img/2sobre.png" alt="">
+                <img src="img/2sobre.png" alt="Escolas" class="about-image">
             </div>
 
-            <div class="conteudoSobre">
-                <div class="textoSobre" >
-                    <h2><span class="h2" style="color: #5AB18E;">Governo</span></h2>
-                    <p>Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.  sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                    <form action="">
-                        <input type="submit" class="submit3" value="Saiba mais">
-                    </form>
+            <div class="about-card">
+                <div class="about-content">
+                    <h2 class="card-title">Governo</h2>
+                    <p>Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                    <button type="button" class="btn btn-primary">Saiba mais</button>
                 </div>
-                <img src="img/3sobre.png" alt="">
+                <img src="img/3sobre.png" alt="Governo" class="about-image">
             </div>
-        </div>
+        </section>
 
-        <div class="contato2" style="height: 650px;">
-            <div class="textoContato2">
-                <h3><span>Contato</span></h3>
-                <h2><span class="h2">Fale conosco</span></h2>
-                <p>Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.  sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                <div id="formasContato">
-                    <div>
-                        <img src="img/Telefone.png" alt="" width="24px"><span> +55 61 991579828</span>
+        <section class="contact-section">
+            <div class="contact-info">
+                <h3 class="section-subtitle">CONTATO</h3>
+                <h2 class="section-title">Fale conosco</h2>
+                <p>Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                
+                <div class="contact-methods">
+                    <div class="contact-item">
+                        <img src="img/Telefone.png" alt="Telefone" width="24">
+                        <span>+55 61 991579828</span>
                     </div>
-                    <div>
-                        <img src="img/Email.png" alt="" width="24px"><span>contato@brino.cc</span>
+                    <div class="contact-item">
+                        <img src="img/Email.png" alt="Email" width="24">
+                        <span>contato@brino.cc</span>
                     </div>
-                    <div>
-                        <img src="img/Localização.png" alt="" width="24px"><span>Parque Tecnológico de Brasília. Lote 4, Edifício de Governança. Bloco "B", 1º Andar. Brasília, DF. CEP 70635-815.</span>
+                    <div class="contact-item">
+                        <img src="img/Localização.png" alt="Localização" width="24">
+                        <span>Parque Tecnológico de Brasília. Lote 4, Edifício de Governança. Bloco "B", 1º Andar. Brasília, DF. CEP 70635-815.</span>
                     </div>
                 </div>
                 
-                <img src="img/mapa.png" alt="" width="300px">
-            
+                <img src="img/mapa.png" alt="Mapa de localização" class="map-image">
             </div>
-            <div id="areaFormContato">
+            
+            <div class="contact-form-container">
                 <h2>Entre em contato</h2>
-                <form id="formContato" action="/contato" method="POST">
-                    <input type="text" name="nomeCompleto" id="nomeCompleto" placeholder="Nome completo" class="formContatoInputs" required></input>
-                    <input type="email" name="email" id="email" placeholder="Email" class="formContatoInputs" required></input>
-                    <input type="tel" name="telefone" id="telefone" placeholder="Telefone / WhatsApp" class="formContatoInputs" required></input>
-                    <textarea id="mensagem" name="mensagem" rows="4" cols="50" placeholder="Digite sua mensagem" style="resize: none" required></textarea>
-                    <input type="submit" value="Enviar" class="submit3 submitContato">
+                <form class="contact-form" action="/contato" method="POST">
+                    <input type="text" name="nomeCompleto" id="nomeCompleto" placeholder="Nome completo" required>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                    <input type="tel" name="telefone" id="telefone" placeholder="Telefone / WhatsApp" required>
+                    <textarea id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem" required></textarea>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
                 </form>
             </div>
-        </div>
-
-        <script src="js/script.js"></script>
+        </section>
     </main>
+    
     <footer>
-        <div id="footer">
-            <img src="img/imgF.png" class="logo">
-            <br><br><br><br>
-            <p>Copyright © 2025 For Rent All Rights Reseverd</p>
+        <div class="container footer-content">
+            <img src="img/imgF.png" class="logo" alt="Brino Logo Footer">
+            <p>Copyright © 2025 Br.ino All Rights Reserved</p>
         </div>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
