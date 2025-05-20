@@ -38,9 +38,20 @@ form.addEventListener('submit', (event)=>{
             let mensagem = resposta[Object.keys(resposta)[0]] // O primeiro item do objeto resposta (geralmente a mensagem)
 
             if(exito){
-                alert('Obrigado! As informações foram enviadas')
+                Swal.fire({
+                    title: 'Sucesso!',
+                    text: 'Dados enviados com sucesso!',
+                    icon: 'success',
+                    confirmButtonText: 'Continuar',
+                })
+                limparFormulario(form)
             }else{
-                alert(mensagem)
+                Swal.fire({
+                    title: 'ERRO!',
+                    text: mensagem,
+                    icon: 'error',
+                    confirmButtonText: 'Continuar',
+                })
             }
 
             // Printa a resposta do backend
@@ -62,7 +73,6 @@ form.addEventListener('submit', (event)=>{
         console.log('ERRO! ' + e)
     }
 
-    limparFormulario(form)
 })
 
 function limparFormulario(form){
