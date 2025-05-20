@@ -1,7 +1,12 @@
+* {
+    font-family: sans-serif;
+    padding: 0;
+}
+
 body{
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-    font-family: poppinsregular;
+    /* font-family: poppinsregular; */
     width: 100%;
     margin: 0;
     padding: 0;
