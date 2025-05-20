@@ -10,7 +10,7 @@ const validarFormulario = (req, res, next) => {
         const mensagem = req.body.mensagem
 
         if((nomeCompleto == "" || nomeCompleto == undefined) || (email == "" || email == undefined) || (telefone == "" || telefone == undefined) || (mensagem == "" || mensagem == undefined)){
-            return res.status(400).json({ erro: 'Preencha / envie todos os campos!' })
+            return res.status(400).json({ message: 'Preencha / envie todos os campos!' })
         }
 
         const testeNome = regexNome.test(nomeCompleto)
@@ -18,20 +18,20 @@ const validarFormulario = (req, res, next) => {
         const testeTelefone = regexTelefone.test(telefone)
         
         if (!testeNome){
-            return res.status(400).json({ erro: 'Nome inválido!' });
+            return res.status(400).json({ message: 'Nome inválido!' });
         }
 
         if (!testeEmail){
-            return res.status(400).json({ erro: 'Email inválido!' });
+            return res.status(400).json({ message: 'Email inválido!' });
         }
             
         if (!testeTelefone){
-            return res.status(400).json({ erro: 'Telefone inválido!' });
+            return res.status(400).json({ message: 'Telefone inválido!' });
         }
             
     }catch(erro){
         console.log(erro)
-        return res.status(400).json({ erro: 'Erro ao enviar o formulario' })
+        return res.status(400).json({ message: 'Erro ao enviar o formulario' })
     }
     
     next()
