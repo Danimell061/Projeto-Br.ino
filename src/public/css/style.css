@@ -126,7 +126,7 @@ main{
 
 .box {
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
     margin-top: 150px;
     text-align: center;
     background-color: #5AB18E;
@@ -154,12 +154,18 @@ main{
     /* position: relative; */
     display: flex;
     /* height: 350px; */
-    /* width: 90%; */
+    /* width: 100%; */
     margin-top: 250px;
     background-color: #5AB18E;
     color: white;
     border: 1px solid #ddd; 
+    justify-content: center;
+    align-items: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.contato p {
+    padding-right: 15px;
 }
 
 .contato img {
@@ -363,7 +369,7 @@ h5{
 }
 
 .grid-imagens img {
-    width: 450px; /* Define uma largura fixa */
+    max-width: 450px; 
     height: auto; /* Mantém a proporção da imagem */
     max-height: 300px; /* Define uma altura máxima para evitar desconfiguração */
     object-fit: cover; /* Ajusta a imagem para preencher o espaço sem distorção */
