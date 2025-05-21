@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
@@ -76,8 +80,7 @@ main{
 #main2{
     display: flex;
     align-items: center;
-    padding: 0px 10px;
-    gap: 15px;
+    padding: 40px 30px;
 }
 
 #main3{
@@ -136,8 +139,8 @@ main{
 
 .box2 {
     margin: 0 auto;
-    /* width: 200px; */
-    /* height: 300px; */
+    width: 22%; 
+    height: 30%; 
     padding: 0 10 20 10px;
     margin-bottom: 50px;
     text-align: center;

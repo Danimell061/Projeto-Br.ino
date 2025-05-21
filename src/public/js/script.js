@@ -84,3 +84,18 @@ function limparFormulario(form){
         }
     }
 }
+
+function scrollBotao(botao, secao){
+    botao.addEventListener('click', (event)=>{
+        event.preventDefault()
+        document.getElementById(secao).scrollIntoView({
+            behavior: 'smooth'
+        })
+    })
+}
+
+scrollBotao(document.getElementById('submit'), 'areaFormContato')
+scrollBotao(document.getElementById('submit3'), 'areaFormContato')
+scrollBotao(document.getElementById('submitPessoas'), 'sobre')
+scrollBotao(document.getElementById('submitEscolas'), 'sobre')
+scrollBotao(document.getElementById('submitGoverno'), 'sobreGoverno')

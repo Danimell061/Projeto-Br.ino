@@ -18,12 +18,12 @@
         </div>
 
         <ul>
-            <a class="nav" href=" "><li>Loja</li></a>
-            <a class="nav" href=" "><li>Escolas</li></a>
-            <a class="nav" href=" "><li>Alunos</li></a>
-            <a class="nav" href=" "><li>Governo</li></a>
-            <a class="nav" href=" "><li>Sobre nós </li></a>
-            <a class="nav" href=" " id="Especial"><li>Entre em Contato</li></a>
+            <a class="nav" href="#loja"><li>Loja</li></a>
+            <a class="nav" href="#sobre"><li>Escolas</li></a>
+            <a class="nav" href="#embarqueNesseCarrosel"><li>Alunos</li></a>
+            <a class="nav" href="#sobreGoverno"><li>Governo</li></a>
+            <a class="nav" href="#midia"><li>Sobre nós </li></a>
+            <a class="nav" href="#areaFormContato" id="Especial"><li>Entre em Contato</li></a>
         </ul>
     </header>
     <main>
@@ -55,8 +55,8 @@
                     <img src="img/pessoas.png" class="img2">
                     <h2><span class="h2o">Pessoas</span></h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <form action="">
-                        <input type="submit" class="submit2" value="Acessar">
+                    <form>
+                        <input type="submit" class="submit2" id="submitPessoas" value="Acessar">
                     </form>
                 </div>
 
@@ -65,7 +65,7 @@
                     <h2><span class="h2o">Escolas</span></h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <form action="">
-                        <input type="submit" class="submit2" value="Acessar">
+                        <input type="submit" class="submit2" id="submitEscolas" value="Acessar">
                     </form>
                 </div>
 
@@ -74,7 +74,7 @@
                     <h2><span class="h2o">Governo</span></h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <form action="">
-                        <input type="submit" class="submit2" value="Acessar">
+                        <input type="submit" class="submit2" id="submitGoverno" value="Acessar">
                     </form>
                 </div>
             </div>
@@ -91,7 +91,7 @@
             <h5>Sobre a Br.ino</h5>
         </div>
         
-        <div class="carrosel-container">      
+        <div class="carrosel-container" id="embarqueNesseCarrosel">      
             <button class="arrow arrow-left" onclick="moveSlide(-1)">&#10094</button>
 
             <div class="carossel" id="animacao">
@@ -126,7 +126,7 @@
 
         
 
-        <div class="sobre">
+        <div class="sobre" id="loja">
             <h3>ABOUT</h3>
             <h5>Sobre a Br.ino</h5>
         </div>
@@ -192,7 +192,7 @@
                 <h2><span class="h2">Entre em contato</span></h2>
                 <p>Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.  sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
                 <form action="">
-                    <input type="submit" class="submit3" value="Envie uma mensagem">
+                    <input type="submit" class="submit3" id="submit3" value="Envie uma mensagem">
                 </form>
             </div>
         </div>
@@ -241,7 +241,7 @@
 
 
 
-        <div class="BrInoMidia">
+        <div class="BrInoMidia" id="midia">
             <h3>CLIPPING</h3>
             <h5> Br.ino na mídia </h5> 
             <div class="grid-imagens">
@@ -255,7 +255,7 @@
             </form>
         </div>
 
-        <div class="sobre">
+        <div class="sobre" id="sobre">
             <h3>ABOUT</h3>
             <h5>Sobre a Br.ino</h5>
             <div class="conteudoSobre">
@@ -280,7 +280,7 @@
                 <img src="img/2sobre.png" alt="">
             </div>
 
-            <div class="conteudoSobre">
+            <div class="conteudoSobre" id="sobreGoverno">
                 <div class="textoSobre" >
                     <h2><span class="h2" style="color: #5AB18E;">Governo</span></h2>
                     <p>Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.  sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
