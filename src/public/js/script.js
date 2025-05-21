@@ -30,11 +30,33 @@ form.addEventListener('submit', (event)=>{
     // Coloca um evendo que ativa quando ele mudar de status para "Enviado"
     xhr.onreadystatechange = ()=>{
         if(xhr.readyState == 4){
-            let documento = xhr.response
-            documento = JSON.parse(documento)
+            
+            let resposta = xhr.response // A resposta
+            let status = xhr.status.toString() // Status HTTP da resposta
+            let exito = status.charAt(0) == 4 || status.charAt(0) == 5 ? false : true // Define se a operação foi concluida com exito ou não
+            resposta = JSON.parse(resposta) // Resposta transformada em JSON
+            let mensagem = resposta[Object.keys(resposta)[0]] // O primeiro item do objeto resposta (geralmente a mensagem)
+
+            if(exito){
+                Swal.fire({
+                    title: 'Sucesso!',
+                    text: 'Dados enviados com sucesso!',
+                    icon: 'success',
+                    confirmButtonText: 'Continuar',
+                })
+                limparFormulario(form)
+            }else{
+                Swal.fire({
+                    title: 'ERRO!',
+                    text: mensagem,
+                    icon: 'error',
+                    confirmButtonText: 'Continuar',
+                })
+            }
 
             // Printa a resposta do backend
-            console.log(documento)
+            console.log(resposta)
+            
         }
     }
 
@@ -47,13 +69,10 @@ form.addEventListener('submit', (event)=>{
     // Manda as informações
     try{
         xhr.send(JSON.stringify(data))
-        alert('Obrigado! As informações foram enviadas')
-    
     }catch(e){
         console.log('ERRO! ' + e)
     }
-    
-    limparFormulario(form)
+
 })
 
 function limparFormulario(form){
@@ -65,3 +84,18 @@ function limparFormulario(form){
         }
     }
 }
+
+function scrollBotao(botao, secao){
+    botao.addEventListener('click', (event)=>{
+        event.preventDefault()
+        document.getElementById(secao).scrollIntoView({
+            behavior: 'smooth'
+        })
+    })
+}
+
+scrollBotao(document.getElementById('submit'), 'areaFormContato')
+scrollBotao(document.getElementById('submit3'), 'areaFormContato')
+scrollBotao(document.getElementById('submitPessoas'), 'sobre')
+scrollBotao(document.getElementById('submitEscolas'), 'sobre')
+scrollBotao(document.getElementById('submitGoverno'), 'sobreGoverno')

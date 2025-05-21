@@ -20,6 +20,8 @@ body {
     background-color: var(--white);
     color: var(--text-color);
     line-height: 1.6;
+    padding-left: 4rem;  
+    padding-right: 4rem;
 }
 
 img {
@@ -27,7 +29,7 @@ img {
     height: auto;
 }
 
-/*Layout & Container */
+
 .container {
     width: 90%;
     max-width: 1200px;
@@ -35,7 +37,7 @@ img {
     padding: 0 15px;
 }
 
-/*Text */
+
 h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0.5rem;
     font-weight: 500;
@@ -86,7 +88,7 @@ p {
     line-height: 1.6;
 }
 
-/*Header & Navigation */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -96,7 +98,6 @@ header {
     top: 0;
     background-color: var(--white);
     z-index: 100;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 .logo {
@@ -138,7 +139,7 @@ header {
     color: var(--white);
 }
 
-/*Buttons*/
+
 .btn {
     display: inline-block;
     padding: 0.75rem 1.5rem;
@@ -212,7 +213,7 @@ header {
     color: var(--primary-color);
 }
 
-/*Hero Section*/
+
 .hero {
     display: flex;
     align-items: center;
@@ -236,7 +237,7 @@ header {
     margin-top: 2rem;
 }
 
-/*Clientes Section*/
+
 .clients {
     text-align: center;
     background-color: var(--primary-color);
@@ -281,7 +282,7 @@ header {
     color: var(--primary-color);
 }
 
-/*Portfolio Section*/
+
 .portfolio {
     text-align: center;
     margin: 5rem 0;
@@ -296,7 +297,7 @@ header {
     box-shadow: var(--box-shadow);
 }
 
-/*Carousel Section*/
+
 .carousel-section {
     text-align: center;
     margin: 5rem 0;
@@ -390,7 +391,7 @@ header {
     right: 5px;
 }
 
-/*Produtos Section*/
+
 .products {
     margin: 5rem 0;
     padding: 2rem 0;
@@ -404,17 +405,23 @@ header {
 }
 
 .product-item.reverse {
-    flex-direction: row-reverse;
+     flex-direction: row-reverse !important;
 }
 
+
+.product-content, .product-image {
+    flex: 1; 
+}
+
+
 .product-content {
-    flex: 1;
     padding: 1rem;
 }
 
-.product-image {
-    flex: 1;
-    text-align: center;
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius); 
 }
 
 .img-responsive {
@@ -424,7 +431,7 @@ header {
     box-shadow: var(--box-shadow);
 }
 
-/*CTA Banner*/
+
 .cta-banner {
     display: flex;
     align-items: center;
@@ -446,7 +453,7 @@ header {
     padding: 0 2rem;
 }
 
-/*Testimonials Section*/
+
 .testimonials {
     text-align: center;
     margin: 5rem 0;
@@ -495,7 +502,7 @@ header {
     font-size: 0.875rem;
 }
 
-/*Media Section*/
+
 .media {
     background-color: var(--primary-color);
     color: var(--white);
@@ -524,7 +531,7 @@ header {
     transform: scale(1.02);
 }
 
-/*About Section*/
+
 .about {
     margin: 5rem 0;
     padding: 2rem 0;
@@ -537,7 +544,8 @@ header {
     margin-bottom: 3rem;
     padding: 2rem;
     border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
+    border: 4px solid #396e; 
+    box-shadow: none; 
 }
 
 .about-card:nth-child(even) {
@@ -562,22 +570,24 @@ header {
     font-size: 1.8rem;
 }
 
-/*Contato Section*/
+
 .contact-section {
     display: flex;
-    gap: 2rem;
+    gap: 4rem; 
     margin: 5rem 0;
     padding: 2rem 0;
+    background-color: #5AB18E;
 }
 
 .contact-info {
     flex: 1;
-    padding: 1rem;
+    padding: 5rem;
 }
 
 .contact-form-container {
-    flex: 1;
+    flex: 0.9;
     padding: 2rem;
+    margin-left: 2rem; 
     background-color: var(--white);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
@@ -593,7 +603,7 @@ header {
 .contact-form input,
 .contact-form textarea {
     padding: 0.75rem 1rem;
-    border: 1px solid #ddd;
+    border: 1px solid #7a6c6c;
     border-radius: var(--border-radius);
     font-size: 1rem;
 }
@@ -621,7 +631,7 @@ header {
     margin-bottom: 1rem;
 }
 
-/*Footer*/
+
 footer {
     background-color: var(--gray-dark);
     color: var(--white);
@@ -642,7 +652,7 @@ footer {
     opacity: 0.8;
 }
 
-/*Responsive Styles*/
+
 @media (max-width: 1024px) {
     .hero, .product-item, .about-card, .contact-section {
         flex-direction: column;
