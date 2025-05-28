@@ -4,12 +4,11 @@ import { fileURLToPath } from 'url';
 import router from './routes/routes.js';
 import connectDB from './database/database.js';
 
-
 const __filename = fileURLToPath(import.meta.url); // Pega onde ta localizado esse arquivo
 const __dirname = path.dirname(__filename); // Transforma em uma formatação mais acessivel, e pega o nome do diretorio onde ta localizado
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT;
 
 // MongoDB
 connectDB()
