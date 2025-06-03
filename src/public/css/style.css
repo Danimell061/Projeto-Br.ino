@@ -10,7 +10,6 @@ html{
 body{
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-    /* font-family: poppinsregular; */
     width: 100%;
     margin: 0;
     padding: 0;
@@ -102,8 +101,6 @@ main{
     /* width: 400px; */
     text-align: justify;
     /* line-height: 20px; */
-    /* font-family: poppinslight; */
-
 }
 
 .submit5{
@@ -113,7 +110,6 @@ main{
     border-radius: 10px;
     padding: 10px 20px;
     color: #ffffff ;
-    /* font-family: poppinsbold; */
     font-size: 17px;
 }
 .submit5:hover{
@@ -169,40 +165,31 @@ main{
     padding-right: 15px;
 }
 
-.contato img {
-    /* position: relative; */
-    /* right: 25px; */
-    /* height: 550px; */
-    /* bottom: 145px; */
-}
-
-
 h1{
     /* line-height: 8px; */
     font-size: 40px;
-    /* font-family: FiraFans; */
 }
 
 h2{
     font-size: 30px;
     /* line-height: 10px; */
-    /* font-family: FiraFans; */
+
 }
 
 .h2o{
     font-size: 25px;
-    /* font-family: FiraFans; */
+
 }
 
 h3{
     font-weight: 200;
     margin-top: 100px;
-    /* font-family: FiraFans; */
+
 }
 
 h4{
     font-size: 25px;
-    /* font-family: FiraFans; */
+
 }
 
 h2.intro-title {
@@ -221,7 +208,6 @@ h2.intro-title {
     text-align: justify;
     /* line-height: 20px; */
     max-width: 500px;
-    /* font-family: poppinslight; */
 }
 
 #img1{
@@ -272,7 +258,6 @@ h2.intro-title {
     border-radius: 10px;
     padding: 15px;
     color: rgb(0, 0, 0);
-    /* font-family: ppoppinsmedium; */
     font-size: 17px;
 }
 #submit:hover{
@@ -290,8 +275,7 @@ h2.intro-title {
     border: none;
     border-radius: 10px;
     padding: 10px;
-    color: #5AB18E ;
-    /* font-family: poppinsbold; */
+    color: #5AB18E;
     font-size: 17px;
 }
 .submit2:hover{
@@ -303,7 +287,6 @@ h2.intro-title {
 }
 
 h5{
-    /* font-family: FiraFans; */
     font-size: 40px;
     margin-top: 0px;
 }
@@ -393,7 +376,6 @@ h5{
     padding: 10px;
     color: #ffffff ;
     border: 1px solid #ffffff;
-    /* font-family: poppinsbold; */
     font-size: 17px;
 }
 .submit4:hover{
@@ -441,7 +423,6 @@ footer {
     border-radius: 10px;
     padding: 10px;
     color: #ffffff ;
-    /* font-family: poppinsbold; */
     font-size: 17px;
 }
 .submit3:hover{
@@ -483,7 +464,6 @@ footer {
     align-items: center;
     justify-content: space-evenly;
     background-color: white;
-    /* height: 570px; */
     padding: 20px;
     margin: 20px;
     border-radius: 8px;
@@ -514,7 +494,6 @@ footer {
 }
 
 #formContato textarea{
-    /* font-family: Arial; */
     width: 100%;
     padding: 20px 25px;
     border: none;
@@ -525,11 +504,10 @@ footer {
 
 .contato2 {
     margin: 0 auto;
-    /* position: relative; */
     display: flex;
     justify-content: space-around;
-    /* height: 350px; */
     width: 90%;
+    height: 20%;
     margin-top: 150px;
     background-color: #5AB18E;
     color: white;
@@ -566,16 +544,12 @@ footer {
     text-align: left;
 }
 
-#formasContato img {
-    width: 24px;
-    height: 24px;
-    flex-shrink: 0;
+#contatoMapa{
+    width: 80%;
 }
-
 
 .textoContato2 h3{
     margin-top: 0px;
-    width: 30%;
 }
 
 .textoContato2 p{
