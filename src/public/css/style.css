@@ -459,7 +459,6 @@ footer {
 
 #areaFormContato{
     display: flex;
-    min-width: 200px;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
