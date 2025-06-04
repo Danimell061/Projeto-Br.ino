@@ -1,9 +1,24 @@
-/* ================================== TABLETS (768px - 1024px) ================================== */
-@media screen and (max-width: 1024px) {
+/* ================================== TABLETS (768px - 1200px) ================================== */
+@media screen and (max-width: 1600px) {
     header {
-        width: 90%;
-        flex-wrap: wrap;
-        gap: 20px;
+        width: 80%;
+    }
+    
+    main {
+        width: 80%;
+    }
+    
+    #footer {
+        width: 80%;
+    }
+}
+/* ================================== TABLETS (768px - 1100px) ================================== */
+@media screen and (max-width: 1100px) {
+    header {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding: 15px 10px;
     }
     
     main {
@@ -834,7 +849,7 @@
 }
 
 /* ================================== HIGH RESOLUTION DISPLAYS ================================== */
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1700px) {
     header {
         width: 60%;
     }
