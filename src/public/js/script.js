@@ -96,6 +96,3 @@ function scrollBotao(botao, secao){
 
 scrollBotao(document.getElementById('submit'), 'areaFormContato')
 scrollBotao(document.getElementById('submit3'), 'areaFormContato')
-scrollBotao(document.getElementById('submitPessoas'), 'sobre')
-scrollBotao(document.getElementById('submitEscolas'), 'sobre')
-scrollBotao(document.getElementById('submitGoverno'), 'sobreGoverno')
