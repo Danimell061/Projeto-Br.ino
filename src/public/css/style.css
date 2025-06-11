@@ -525,9 +525,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr; /* Padrão: 1 coluna para celular */
     gap: 30px;
-    margin-top: 40px;
 }
-
 .product-card {
     border: 1px solid #e0e0e0;
     border-radius: 10px;
@@ -536,24 +534,21 @@ footer {
     box-shadow: var(--sombra-padrao);
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Alinha o botão no final */
+    justify-content: space-between;
 }
-
 .product-card img {
     width: 100%;
-    height: 220px; /* Altura fixa para todas as imagens */
-    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+    height: 220px;
+    object-fit: cover;
     border-radius: 8px;
     margin-bottom: 20px;
 }
-
 .product-card h4 {
     font-size: 1.3rem;
     margin-bottom: 10px;
 }
-
 .product-card p {
-    flex-grow: 1; /* Faz o parágrafo ocupar o espaço disponível */
+    flex-grow: 1; 
     margin-bottom: 20px;
 }
 /* ================================== */
@@ -701,11 +696,12 @@ footer {
     .contact-info, .contact-form-area {
         flex: 1;
     }
-}
-/* --------------- OUTRAS JANELAS --------------- */
-/* --- SEÇÃO LOJA (PRODUTOS) --- */
-.product-grid-section {
-    grid-template-columns: repeat(3, 1fr); /* 3 colunas em telas maiores */
+    /* --------------- OUTRAS JANELAS --------------- */
+
+    /* --- SEÇÃO LOJA (PRODUTOS) --- */
+    .product-grid-section {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 /* ================================== */
