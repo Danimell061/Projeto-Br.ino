@@ -181,11 +181,11 @@ header nav ul {
 .text1{
     max-width: 550px; 
     margin-top: 25px;
+    text-align: justify;
 }
 
 
 /* --- SEÇÃO CLIENTES --- */
-
 .clients-section {
     background-color: var(--cor-primaria);
     color: var(--cor-texto-claro);
@@ -521,10 +521,9 @@ footer {
 /* --------------- OUTRAS JANELAS --------------- */
 
 /* --- SEÇÃO LOJA (PRODUTOS) --- */
-.page-intro-text {
-    max-width: 700px; /* Limita a largura para melhor leitura */
-    line-height: 1.7; /* Melhora o espaçamento entre as linhas */
-    font-size: 1.1rem;
+.section-subtitle {
+    line-height: 1.5;
+    text-align: justify;
 }
 .product-grid-section {
     display: grid;
@@ -733,6 +732,9 @@ footer {
         flex: 1;
     }
     /* --------------- OUTRAS JANELAS --------------- */
+    hr {
+    margin-top: 40px;
+    }
     .page-title-section{
         margin-top: 30px;
     }
