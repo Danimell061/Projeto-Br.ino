@@ -521,6 +521,11 @@ footer {
 /* --------------- OUTRAS JANELAS --------------- */
 
 /* --- SEÇÃO LOJA (PRODUTOS) --- */
+.page-intro-text {
+    max-width: 700px; /* Limita a largura para melhor leitura */
+    line-height: 1.7; /* Melhora o espaçamento entre as linhas */
+    font-size: 1.1rem;
+}
 .product-grid-section {
     display: grid;
     grid-template-columns: 1fr; /* Padrão: 1 coluna para celular */
@@ -551,6 +556,37 @@ footer {
     flex-grow: 1; 
     margin-bottom: 20px;
 }
+/* --- SEÇÃO TIME (SOBRE NÓS) --- */
+.team-section {
+    text-align: center;
+}
+.team-grid {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem a linha em telas menores */
+    justify-content: center; /* Centraliza os membros no contêiner */
+    gap: 40px; /* Espaço entre os cards dos membros */
+    margin-top: 40px;
+}
+.team-member {
+    text-align: center;
+    max-width: 200px;
+}
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Deixa a imagem redonda */
+    object-fit: cover; /* Garante que a foto não fique distorcida */
+    margin-bottom: 15px;
+    border: 3px solid var(--cor-primaria);
+}
+.team-member h6 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+.team-member span {
+    color: #555;
+}
+
 /* ================================== */
 /* TABLETS (A PARTIR DE 768px)        */
 /* ================================== */
@@ -697,7 +733,9 @@ footer {
         flex: 1;
     }
     /* --------------- OUTRAS JANELAS --------------- */
-
+    .page-title-section{
+        margin-top: 30px;
+    }
     /* --- SEÇÃO LOJA (PRODUTOS) --- */
     .product-grid-section {
         grid-template-columns: repeat(3, 1fr);
