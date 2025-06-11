@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós - Br.ino</title>
+    <link rel="shortcut icon" href="img/Icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div>
+            <a href="index.html">
+               <img src="img/logo.png" class="logo" alt="Logo da Br.ino">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a class="nav" href="./loja.html">Loja</a></li>
+                <li><a class="nav" href="./escolas.html">Escolas</a></li>
+                <li><a class="nav" href="./alunos.html">Alunos</a></li>
+                <li><a class="nav" href="./governo.html">Governo</a></li>
+                <li><a class="nav" href="./sobreNos.html">Sobre nós</a></li>
+                <li><a class="nav btn btn-outline-primary js-scroll-to-contact" href="#areaFormContato" id="contact-button">Entre em Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-about">
+            <div class="hero-about-text">
+                <h1>Apaixonados por Educação e Tecnologia</h1>
+                <p>A Br.ino nasceu do sonho de democratizar o acesso à robótica, transformando o aprendizado em uma jornada criativa e acessível para todos.</p>
+            </div>
+        </section>
+        
+        <section class="info-section">
+            <aside>
+                <h2><span class="highlight">Nossa Missão</span></h2>
+                <p>Nossa missão é despertar o potencial criativo de crianças e jovens através da educação tecnológica. Acreditamos que, ao aprender a construir e programar, nossos alunos não estão apenas desenvolvendo habilidades para o futuro, mas também aprendendo a resolver problemas, a colaborar e a transformar o mundo ao seu redor.</p>
+            </aside>
+            <article>
+                <img src="./img/one.png" alt="Nossa Missão" class="info-image">
+            </article>
+        </section>
+
+        <section class="team-section">
+            <div class="section-title">
+                <h3>NOSSO TIME</h3>
+                <h5>As Mentes por Trás da Br.ino</h5>
+            </div>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="img/user1.png" alt="Foto do Membro 1">
+                    <h6>Nome do Membro 1</h6>
+                    <span>CEO & Fundador</span>
+                </div>
+                <div class="team-member">
+                    <img src="img/user2.png" alt="Foto do Membro 2">
+                    <h6>Nome do Membro 2</h6>
+                    <span>Diretor Pedagógico</span>
+                </div>
+                <div class="team-member">
+                    <img src="img/user3.png" alt="Foto do Membro 3">
+                    <h6>Nome do Membro 3</h6>
+                    <span>Engenheiro de Software</span>
+                </div>
+                 <div class="team-member">
+                    <img src="img/user3.png" alt="Foto do Membro 4">
+                    <h6>Nome do Membro 4</h6>
+                    <span>Designer de Produto</span>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contact-section" class="contact-section">
+            <div class="contact-info">
+                <h3><span>Contato</span></h3>
+                <h2>Fale conosco</h2>
+                <p>Estamos prontos para tirar suas dúvidas, agendar uma demonstração ou discutir parcerias.</p>
+                <div class="contact-methods">
+                    <div><img src="img/Telefone.png" alt="Ícone de telefone" width="24px"><span>+55 61 99157-9828</span></div>
+                    <div><img src="img/Email.png" alt="Ícone de e-mail" width="24px"><span>contato@brino.cc</span></div>
+                    <div><img src="img/Localizacao.png" alt="Ícone de localização" width="24px"><span>Parque Tecnológico de Brasília. Lote 4, Edifício de Governança. Bloco "B", 1º Andar. Brasília, DF.</span></div>
+                    <img src="img/mapa.png" id="contact-map" alt="Mapa da localização da Br.ino">
+                </div>
+            </div>
+            <div id="areaFormContato" class="contact-form-area">
+                <h2>Envie sua mensagem</h2>
+                <form id="formContato">
+                    <input type="text" name="nomeCompleto" placeholder="Nome completo" class="form-input" required>
+                    <input type="email" name="email" placeholder="Email" class="form-input" required>
+                    <input type="tel" name="telefone" placeholder="Telefone / WhatsApp" class="form-input" required>
+                    <textarea name="mensagem" rows="6" placeholder="Digite sua mensagem" class="form-textarea" required></textarea>
+                    <button type="submit" class="btn btn-primary form-submit-btn">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <img src="img/imgF.png" class="logo" alt="Logo da Br.ino em rodapé">
+            <p>Copyright © 2025 Br.ino. Todos os Direitos Reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

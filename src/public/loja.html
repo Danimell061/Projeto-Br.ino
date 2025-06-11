@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja - Br.ino</title>
+    <link rel="shortcut icon" href="img/Icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div>
+            <a href="index.html">
+               <img src="img/logo.png" class="logo" alt="Logo da Br.ino">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a class="nav" href="./loja.html">Loja</a></li>
+                <li><a class="nav" href="./escolas.html">Escolas</a></li>
+                <li><a class="nav" href="./alunos.html">Alunos</a></li>
+                <li><a class="nav" href="./governo.html">Governo</a></li>
+                <li><a class="nav" href="./sobreNos.html">Sobre nós</a></li>
+                <li><a class="nav btn btn-outline-primary js-scroll-to-contact" href="#areaFormContato" id="contact-button">Entre em Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-title-section">
+            <div class="section-title">
+                <h3>NOSSA LOJA</h3>
+                <h5>Kits, Livros e Componentes para seus Projetos</h5>
+            </div>
+            <p class="page-intro-text">
+            Explore nossa seleção de produtos pensados para todos os níveis de conhecimento. Encontre o kit ideal para começar, o livro para aprofundar seus estudos ou os componentes para tirar seu projeto do papel.
+            </p>
+        </section>
+        <section class="product-grid-section">
+            <div class="product-card">
+                <img src="img/213.jpg" alt="Kit de Robótica">
+                <h4>Kit Robô Explorador</h4>
+                <p>O primeiro passo ideal para quem quer começar a construir e programar robôs autônomos.</p>
+                <a href="#areaFormContato" class="btn btn-primary">Entre em Contato</a>
+            </div>
+            <div class="product-card">
+                <img src="img/321.png" alt="Livro de Programação">
+                <h4>Livro: Introdução à Lógica</h4>
+                <p>A base teórica completa para você dominar os conceitos por trás dos seus projetos de robótica.</p>
+                <a href="#areaFormContato" class="btn btn-primary">Entre em Contato</a>
+            </div>
+            <div class="product-card">
+                <img src="img/brinomidia3.png" alt="Componentes Eletrônicos">
+                <h4>Componentes Avulsos</h4>
+                <p>Sensores, motores, placas e tudo que você precisa para criar projetos e protótipos do zero.</p>
+                <a href="#areaFormContato" class="btn btn-primary">Entre em Contato</a>
+            </div>
+        </section>
+
+        <section id="contact-section" class="contact-section">
+            <div class="contact-info">
+                <h3><span>Contato</span></h3>
+                <h2>Fale conosco</h2>
+                <p>Estamos prontos para tirar suas dúvidas, agendar uma demonstração ou discutir parcerias.</p>
+                <div class="contact-methods">
+                    <div><img src="img/Telefone.png" alt="Ícone de telefone" width="24px"><span>+55 61 99157-9828</span></div>
+                    <div><img src="img/Email.png" alt="Ícone de e-mail" width="24px"><span>contato@brino.cc</span></div>
+                    <div><img src="img/Localizacao.png" alt="Ícone de localização" width="24px"><span>Parque Tecnológico de Brasília. Lote 4, Edifício de Governança. Bloco "B", 1º Andar. Brasília, DF.</span></div>
+                    <img src="img/mapa.png" id="contact-map" alt="Mapa da localização da Br.ino">
+                </div>
+            </div>
+            <div id="areaFormContato" class="contact-form-area">
+                <h2>Envie sua mensagem</h2>
+                <form id="formContato">
+                    <input type="text" name="nomeCompleto" placeholder="Nome completo" class="form-input" required>
+                    <input type="email" name="email" placeholder="Email" class="form-input" required>
+                    <input type="tel" name="telefone" placeholder="Telefone / WhatsApp" class="form-input" required>
+                    <textarea name="mensagem" rows="6" placeholder="Digite sua mensagem" class="form-textarea" required></textarea>
+                    <button type="submit" class="btn btn-primary form-submit-btn">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <img src="img/imgF.png" class="logo" alt="Logo da Br.ino em rodapé">
+            <p>Copyright © 2025 Br.ino. Todos os Direitos Reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

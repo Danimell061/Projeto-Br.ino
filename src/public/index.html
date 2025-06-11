@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -5,337 +6,310 @@
     <title>Projeto Brino</title>
     <link rel="shortcut icon" href="img/Icon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+
     <header>
-        <div id="title">
+        <div>
             <a href="index.html">
-               <img src="img/logo.png" class="logo">
+               <img src="img/logo.png" class="logo" alt="Logo da Br.ino">
             </a>
         </div>
-
-        <ul>
-            <a class="nav" href="#loja"><li>Loja</li></a>
-            <a class="nav" href="#sobre"><li>Escolas</li></a>
-            <a class="nav" href="#embarqueNesseCarrosel"><li>Alunos</li></a>
-            <a class="nav" href="#sobreGoverno"><li>Governo</li></a>
-            <a class="nav" href="#midia"><li>Sobre nós </li></a>
-            <a class="nav" href="#areaFormContato" id="Especial"><li>Entre em Contato</li></a>
-        </ul>
+        <nav>
+            <ul>
+                <a class="nav" href="./loja.html"><li>Loja</li></a>
+                <a class="nav" href="./escolas.html"><li>Escolas</li></a>
+                <a class="nav" href="./alunos.html"><li>Alunos</li></a>
+                <a class="nav" href="./governo.html"><li>Governo</li></a>
+                <a class="nav" href="./sobreNos.html"><li>Sobre nós</li></a>
+                <a class="nav btn btn-secondary-primary" href="#areaFormContato" id="contact-button"><li>Entre em Contato</li></a>
+            </ul>
+        </nav>
     </header>
+
     <main>
-        <div id="main">
+        <section id="hero">
             <aside>
-                <h2 class="intro-title">Conheça a grande Startup de Robotica</h2>
+                <h2 class="intro-title">Conheça a grande Startup de Robótica</h2>
                 <div><span id="destaque">Br.ino</span></div>
                 <p class="text1">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quaerat doloremque quas. 
-                    Quam, sit voluptatem similique doloremque illum, quibusdam nulla odit assumenda nostrum perspiciatis 
-                    deleniti dolorum nobis iusto laborum sed. 
+                    Somos uma startup apaixonada por robótica e educação, dedicada a transformar o aprendizado em uma aventura tecnológica para todos.
                 </p>
-                <form action="">
-                    <input type="submit" id="submit" value="Envie uma mensagem">
-                    <a id="Video" href="https://www.youtube.com/watch?v=BNzG8pgsjsg"><i class="fas fa-play"></i> Assista o video</a>
-                </form>
+                <div class="hero-actions">
+                    <a href="#areaFormContato" class="btn btn-primary btn-black">Envie uma mensagem</a>
+                    <a id="Video" href="https://www.youtube.com/watch?v=BNzG8pgsjsg" class="btn-video"><i class="fas fa-play"></i> Assista ao vídeo</a>
+                </div>
             </aside>
+            <figure>
+                <img src="./img/one.png" alt="Ilustração de um robô e componentes eletrônicos" class="img1">
+            </figure>
+        </section>
 
-            <div>
-                <img src="./img/one.png" alt="One" id="img1">
-            </div>
-        </div>
-
-        <div class="box" >
+        <section class="clients-section">
             <h3>CLIENTES</h3>
             <h1>Onde o Br.ino atua</h1>
-            <div id="main2">
-                <div class="box2">
-                    <img src="img/pessoas.png" class="img2">
-                    <h2><span class="h2o">Pessoas</span></h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <form>
-                        <input type="submit" class="submit2" id="submitPessoas" value="Acessar">
-                    </form>
+            <div class="clients-grid">
+                <div class="client-card">
+                    <img src="img/pessoas.png" class="client-icon" alt="Ícone de pessoas">
+                    <h2>Pessoas</h2>
+                    <p>Cursos e kits para entusiastas de todas as idades.</p>
+                    <a href="#" class="btn btn-primary">Acessar</a>
                 </div>
-
-                <div class="box2">
-                    <img src="img/escola.png" class="img2">
-                    <h2><span class="h2o">Escolas</span></h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <form action="">
-                        <input type="submit" class="submit2" id="submitEscolas" value="Acessar">
-                    </form>
+                <div class="client-card">
+                    <img src="img/escola.png" class="client-icon" alt="Ícone de escola">
+                    <h2>Escolas</h2>
+                    <p>Soluções de robótica educacional para instituições de ensino.</p>
+                    <a href="#" class="btn btn-primary">Acessar</a>
                 </div>
-
-                <div class="box2">
-                    <img src="img/gov.png" class="img2">
-                    <h2><span class="h2o">Governo</span></h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <form action="">
-                        <input type="submit" class="submit2" id="submitGoverno" value="Acessar">
-                    </form>
+                <div class="client-card">
+                    <img src="img/gov.png" class="client-icon" alt="Ícone de governo">
+                    <h2>Governo</h2>
+                    <p>Projetos e parcerias para a inclusão digital e tecnológica.</p>
+                    <a href="#" class="btn btn-primary">Acessar</a>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class = "portifolio">
-            <h3>PORTIFÓLIO</h3>
+        <section class="portfolio">
+            <h3>PORTFÓLIO</h3>
             <h5>Onde já atuamos</h5>
-            <img src="img/OndeAtuamos.png" alt="OndeAtuamos" class="OndeAtuamos">
-        </div>
-
-        <div class="sobre">
+            <img src="img/OndeAtuamos.png" alt="Mapa mostrando as áreas de atuação da Br.ino" class="portfolio-map">
+        </section>
+        
+        <section class="about-us">
             <h3>ABOUT</h3>
             <h5>Sobre a Br.ino</h5>
-        </div>
-        
-        <div class="carrosel-container" id="embarqueNesseCarrosel">      
-            <button class="arrow arrow-left" onclick="moveSlide(-1)">&#10094</button>
-
-            <div class="carossel" id="animacao">
-
-                <div class="slide">
-                    <div class="slide-content">
-                        <h3>ESCOLAS</h3>
-                        <h2>Robótica Educacional</h2>
-                        <p>Korem ipsum dolor sit amet, consectetur adipiscing elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                        <form action="">
-                            <button>Leia Mais</button>
-                        </form>
+            <section class="carousel-container" id="embarqueNesseCarrosel">      
+                <button class="arrow arrow-left" onclick="moveSlide(-1)">❮</button>
+                <div class="carousel" id="animacao">
+                    <div class="slide">
+                        <div class="slide-content">
+                            <h3>ESCOLAS</h3>
+                            <h2>Robótica Educacional</h2>
+                            <p>Transforme sua sala de aula em um laboratório de inovação com nossos kits e metodologias de robótica educacional.</p>
+                            <button class="btn btn-secondary">Leia Mais</button>
+                        </div>
+                        <div class="slide-image" style="background-image: url('img/teste.jpg');"></div>
                     </div>
-                    <div class="slide-image" style="background-image: url('img/teste.jpg');"></div>
-                </div>
-
-                <div class="slide">
-                    <div class="slide-image" style="background-image: url('img/teste2.jpg');"></div>
-                    <div class="slide-content">
-                        <h3>ESCOLAS</h3>
-                        <h2>Programação para Jovens</h2>
-                        <p>Aprenda lógica, estrutura de dados e monte seus próprios robôs com kits de eletrônica e programação em grupo.</p>
-                        <form action="">
-                            <button>Leia Mais</button>
-                        </form>
+                    <div class="slide">
+                        <div class="slide-image" style="background-image: url('img/teste2.jpg');"></div>
+                        <div class="slide-content">
+                            <h3>JOVENS</h3>
+                            <h2>Programação para Jovens</h2>
+                            <p>Aprenda lógica, estrutura de dados e monte seus próprios robôs com kits de eletrônica e programação em grupo.</p>
+                            <button class="btn btn btn-secondary">Leia Mais</button>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <h3>LOJA</h3>
+                            <h2>Livros didaticos</h2>
+                            <p>Aprenda lógica, estrutura de dados e monte seus próprios robôs com kits de eletrônica e programação em grupo.</p>
+                            <button class="btn btn btn-secondary">Leia Mais</button>
+                        </div>
+                        <div class="slide-image" style="background-image: url('img/321.png');"></div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-image" style="background-image: url('img/123.jpg');"></div>
+                        <div class="slide-content">
+                            <h3>GOVERNO</h3>
+                            <h2>Parcerias Governamentais</h2>
+                            <p>Aprenda lógica, estrutura de dados e monte seus próprios robôs com kits de eletrônica e programação em grupo.</p>
+                            <button class="btn btn btn-secondary">Leia Mais</button>
+                        </div>
                     </div>
                 </div>
+                <button class="arrow arrow-right" onclick="moveSlide(1)">❯</button>
+            </section>
+        </section>
 
-            </div>
-            <button class="arrow arrow-right" onclick="moveSlide(1)">&#10095</button>
-        </div>
-
-        
-
-        <div class="sobre" id="loja">
+        <section class="info-title">
             <h3>ABOUT</h3>
             <h5>Sobre a Br.ino</h5>
-        </div>
+            <section class="info-section">
+                <aside>
+                    <h2><span class="highlight">Cursos</span></h2>
+                    <p>Nossos cursos são projetados para inspirar criatividade e pensamento crítico, desde os primeiros passos na programação até projetos avançados de robótica.</p>
+                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                </aside>
+                <article>
+                    <img src="./img/123.jpg" alt="Pessoas em um curso de robótica" class="info-image info-image-right">
+                </article>
+            </section>
+        </section>
 
-        <div id="main3">
+        <section class="info-section row-reverse">
             <aside>
-                <h2><span id="destaque">Cursos</span></h2>
-                <p class="text1">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quaerat doloremque quas. 
-                    Quam, sit voluptatem similique doloremque illum, quibusdam nulla odit assumenda nostrum perspiciatis 
-                    deleniti dolorum nobis iusto laborum sed. 
-                </p>
-                <form action="">
-                    <input type="submit" class="submit5" value="Saiba mais">
-                </form>
+                <h2><span class="highlight">Kits</span></h2>
+                <p>Explore nossa linha de kits de robótica, perfeitos para aprender, experimentar e construir seus próprios projetos em casa ou na escola.</p>
+                <a href="#" class="btn btn-primary">Saiba mais</a>
             </aside>
-
-            <div>
-                <img src="./img/123.jpg" alt="One" id="img1">
-            </div>
-        </div>
-
-        <div id="main3">
             <article>
-                <img src="./img/213.jpg" alt="One" id="img1">
+                <img src="./img/213.jpg" alt="Kit de montagem de robótica" class="info-image">
             </article>
-            <aside>
-                <h2><span id="destaque">Kits</span></h2>
-                <p class="text1">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quaerat doloremque quas. 
-                    Quam, sit voluptatem similique doloremque illum, quibusdam nulla odit assumenda nostrum perspiciatis 
-                    deleniti dolorum nobis iusto laborum sed. 
-                </p>
-                <form action="">
-                    <input type="submit" class="submit5" value="Saiba mais">
-                </form>
-            </aside>
-        </div>
+        </section>
 
-        <div id="main3">
+        <section class="info-section">
             <aside>
-                <h2><span id="destaque">Livros</span></h2>
-                <p class="text1">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quaerat doloremque quas. 
-                    Quam, sit voluptatem similique doloremque illum, quibusdam nulla odit assumenda nostrum perspiciatis 
-                    deleniti dolorum nobis iusto laborum sed. 
-                </p>
-                <form action="">
-                    <input type="submit" class="submit5" value="Saiba mais">
-                </form>
+                <h2><span class="highlight">Livros</span></h2>
+                <p>Nossos cursos são projetados para inspirar criatividade e pensamento crítico, desde os primeiros passos na programação até projetos avançados de robótica.</p>
+                <a href="#" class="btn btn-primary">Saiba mais</a>
             </aside>
-
             <article>
-                <img src="./img/321.png" alt="One" id="img1">
+                <img src="./img/321.png" alt="Pessoas em um curso de robótica" class="info-image info-image-right">
             </article>
-        </div>
+        </section>
 
-        <div class="contato">
-            <div class="textoContato">
-                <img src="img/brino2.png" alt="">
+        <section class="cta-section">
+            <div class="cta-image">
+                <img src="img/brino2.png" alt="Membro da equipe Br.ino">
             </div>
-            <div class="textoContato">
-                <h2><span class="h2">Entre em contato</span></h2>
-                <p>Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.  sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                <form action="">
-                    <input type="submit" class="submit3" id="submit3" value="Envie uma mensagem">
-                </form>
+            <div class="cta-text">
+                <h2>Entre em contato</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                <a href="#areaFormContato" class="btn btn-secondary">Envie uma mensagem</a>
             </div>
-        </div>
+        </section>
 
-        <div class = "depoimentos">
+        <section class="testimonials">
             <h3>DEPOIMENTOS</h3>
-            <h5>Oque as pessoas falam sobre a Br.ino</h5>
-            <div class="conteudoDepoimentos">
-                <div class="areasDepoimento">
-                    <div class="pessoaDepoimento">
-                        <img src="img/user1.png" alt="" width="96">
+            <h5>O que as pessoas falam sobre a Br.ino</h5>
+            <div class="testimonials-content">
+                <div class="testimonial-card">
+                    <div class="testimonial-person">
+                        <img src="img/user1.png" alt="Foto de Allan Marti" width="96">
                         <div>
-                            <strong>Allan Marti</strong>
+                            <strong>Allan Marti</strong><br>
                             <span>Aluno</span>
                         </div>
-                        
                     </div>
-
-                    <p>Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per</p>
+                    <p>"Uma experiência incrível que abriu meus olhos para o mundo da tecnologia. Aprendi muito e me diverti no processo."</p>
                 </div>
-                <div class="areasDepoimento">
-                    <div class="pessoaDepoimento">
-                        <img src="img/user2.png" alt="" width="96">
+                <div class="testimonial-card">
+                    <div class="testimonial-person">
+                        <img src="img/user2.png" alt="Foto de Leonardo da Vincios" width="96">
                         <div>
-                            <strong>Leonardo da Vincios</strong>
+                            <strong>Leonardo da Vincios</strong><br>
                             <span>Escola</span>
                         </div>
                     </div>
-
-                    <p>Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per</p>
+                    <p>"A parceria com a Br.ino revolucionou nosso ensino de tecnologia, engajando os alunos de uma forma que nunca vimos antes."</p>
                 </div>
-                <div class="areasDepoimento">
-                    <div class="pessoaDepoimento">
-                        <img src="img/user3.png" alt="" width="96">
+                <div class="testimonial-card">
+                    <div class="testimonial-person">
+                        <img src="img/user3.png" alt="Foto de Marcos Vinicius" width="96">
                         <div>
-                            <strong>Marcos Vinicius</strong>
+                            <strong>Marcos Vinicius</strong><br>
                             <span>Governo</span>
                         </div>
-                        
                     </div>
-
-                    <p>Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per</p>
+                    <p>"Um projeto de grande impacto social, levando conhecimento e oportunidades para jovens em todo o país. Estamos orgulhosos."</p>
                 </div>
             </div>
-        </div>
+        </section>
 
-
-
-        <div class="BrInoMidia" id="midia">
+        <section class="media-clipping">
             <h3>CLIPPING</h3>
-            <h5> Br.ino na mídia </h5> 
-            <div class="grid-imagens">
-            <img src="img/brinomidia1.png" alt="">
-            <img src="img/brinomidia2.png" alt="">
-            <img src="img/brinomidia3.png" alt="">
-            <img src="img/brinomidia4.png" alt="">
+            <h5>Br.ino na mídia</h5> 
+            <div class="media-grid">
+                <div class="media-column">
+                    <img src="img/brinomidia1.png" alt="Brino na mídia - Reportagem">
+                    <img src="img/brinomidia3.png" alt="Brino na mídia - Startup 360">
+                </div>
+                <div class="media-column">
+                    <img src="img/brinomidia2.png" alt="Brino na mídia - Destaque">
+                    <img src="img/brinomidia4.png" alt="Brino na mídia - Liga Insights">
+                </div>
             </div>
-            <form action="">
-                <button class="submit4">Veja mais</button>
-            </form>
-        </div>
+            <a href="#" class="btn btn-secondary">Veja mais</a>
+        </section>
 
-        <div class="sobre" id="sobre">
-            <h3>ABOUT</h3>
-            <h5>Sobre a Br.ino</h5>
-            <div class="conteudoSobre">
-                <div class="textoSobre" >
-                    <h2><span class="h2" style="color: #5AB18E;">Pessoas</span></h2>
-                    <p>Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.  sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                    <form action="">
-                        <input type="submit" class="submit3" value="Saiba mais">
+        <section class="about-detailed">
+            <div class="section-title">
+                <h3>ABOUT</h3>
+                <h5>Sobre a Br.ino</h5>
+            </div>
+
+            <div class="about-card">
+                <div class="about-card__text">
+                    <h2><span class="highlight">Pessoas</span></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                </div>
+                <div class="about-card__image">
+                    <img src="img/1sobre.png" alt="Ilustração para a seção Pessoas">
+                </div>
+            </div>
+
+            <div class="about-card">
+                <div class="about-card__text">
+                    <h2><span class="highlight">Escolas</span></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                </div>
+                <div class="about-card__image">
+                    <img src="img/2sobre.png" alt="Ilustração para a seção Escolas">
+                </div>
+            </div>
+
+            <div class="about-card">
+                <div class="about-card__text">
+                    <h2><span class="highlight">Governo</span></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                </div>
+                <div class="about-card__image">
+                    <img src="img/3sobre.png" alt="Ilustração para a seção Governo">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <section class="title-contato">
+                <h3>CONTATO</h3>
+                <h5>Entre em Contato</h5>
+            </section>
+            <section id="contact-section" class="contact-section">
+                <div class="contact-info">
+                    <h3><span>Contato</span></h3>
+                    <h2>Fale conosco</h2>
+                    <p>Estamos prontos para tirar suas dúvidas, agendar uma demonstração ou discutir parcerias. Entre em contato por um de nossos canais.</p>
+                    <div class="contact-methods">
+                        <div>
+                            <img src="img/Telefone.png" alt="Ícone de telefone" width="24px"><span>+55 61 99157-9828</span>
+                        </div>
+                        <div>
+                            <img src="img/Email.png" alt="Ícone de e-mail" width="24px"><span>contato@brino.cc</span>
+                        </div>
+                        <div>
+                            <img src="img/Localização.png" alt="Ícone de localização" width="24px"><span>Parque Tecnológico de Brasília. Lote 4, Edifício de Governança. Bloco "B", 1º Andar. Brasília, DF.</span>
+                        </div>
+                        <img src="img/mapa.png" id="contact-map" alt="Mapa da localização da Br.ino">
+                    </div>
+                </div>
+                <div id="areaFormContato" class="contact-form-area">
+                    <h2>Envie sua mensagem</h2>
+                    <form id="formContato" action="/contato" method="POST">
+                        <input type="text" name="nomeCompleto" placeholder="Nome completo" class="form-input" required>
+                        <input type="email" name="email" placeholder="Email" class="form-input" required>
+                        <input type="tel" name="telefone" placeholder="Telefone / WhatsApp" class="form-input" required>
+                        <textarea name="mensagem" rows="4" placeholder="Digite sua mensagem" class="form-textarea" required></textarea>
+                        <button type="submit" value="Enviar" class="btn btn-primary form-submit-btn">Enviar</button>
                     </form>
                 </div>
-                <img src="img/1sobre.png" alt="">
-            </div>
-
-            <div class="conteudoSobre">
-                <div class="textoSobre" >
-                    <h2><span class="h2" style="color: #5AB18E;">Escolas</span></h2>
-                    <p>Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.  sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                    <form action="">
-                        <input type="submit" class="submit3" value="Saiba mais">
-                    </form>
-                </div>
-                <img src="img/2sobre.png" alt="">
-            </div>
-
-            <div class="conteudoSobre" id="sobreGoverno">
-                <div class="textoSobre" >
-                    <h2><span class="h2" style="color: #5AB18E;">Governo</span></h2>
-                    <p>Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.  sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                    <form action="">
-                        <input type="submit" class="submit3" value="Saiba mais">
-                    </form>
-                </div>
-                <img src="img/3sobre.png" alt="">
-            </div>
-        </div>
-
-        <div class="contato2" style="height: 650px;">
-            <div class="textoContato2">
-                <h3><span>Contato</span></h3>
-                <h2><span class="h2">Fale conosco</span></h2>
-                <p>Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.  sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                <div id="formasContato">
-                    <div>
-                        <img src="img/Telefone.png" alt="" width="24px"><span> +55 61 991579828</span>
-                    </div>
-                    <div>
-                        <img src="img/Email.png" alt="" width="24px"><span>contato@brino.cc</span>
-                    </div>
-                    <div>
-                        <img src="img/Localização.png" alt="" width="24px"><span>Parque Tecnológico de Brasília. Lote 4, Edifício de Governança. Bloco "B", 1º Andar. Brasília, DF. CEP 70635-815.</span>
-                    </div>
-                </div>
-                
-                <img src="img/mapa.png" alt="" width="300px">
-            
-            </div>
-            <div id="areaFormContato">
-                <h2>Entre em contato</h2>
-                <form id="formContato" action="/contato" method="POST">
-                    <input type="text" name="nomeCompleto" id="nomeCompleto" placeholder="Nome completo" class="formContatoInputs" required></input>
-                    <input type="email" name="email" id="email" placeholder="Email" class="formContatoInputs" required></input>
-                    <input type="tel" name="telefone" id="telefone" placeholder="Telefone / WhatsApp" class="formContatoInputs" required></input>
-                    <textarea id="mensagem" name="mensagem" rows="4" cols="50" placeholder="Digite sua mensagem" style="resize: none" required></textarea>
-                    <input type="submit" value="Enviar" class="submit3 submitContato">
-                </form>
-            </div>
-        </div>
-
-        <!-- SCRIPT ALERTAS -->
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-        <!-- SCRIPT LOCAL -->
-        <script src="js/script.js"></script>
-        
+            </section>
+        </section>
     </main>
+
     <footer>
-        <div id="footer">
-            <img src="img/imgF.png" class="logo">
-            <br><br><br><br>
-            <p>Copyright © 2025 For Rent All Rights Reseverd</p>
+        <div class="footer-content">
+            <img src="img/imgF.png" class="logo" alt="Logo da Br.ino em rodapé">
+            <p>Copyright © 2025 Br.ino. Todos os Direitos Reservados.</p>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

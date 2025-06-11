@@ -23,7 +23,7 @@ const criarFormulario = async (req, res)=>{
     }catch(erro){
         res.status(500).json({ 
             message: "Erro ao salvar no MongoDB!",
-            erro: erro
+            erro: erro.message
         })
     }
 }

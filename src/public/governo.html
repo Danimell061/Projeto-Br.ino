@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Governo - Br.ino</title>
+    <link rel="shortcut icon" href="img/Icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div>
+            <a href="index.html">
+               <img src="img/logo.png" class="logo" alt="Logo da Br.ino">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a class="nav" href="./loja.html">Loja</a></li>
+                <li><a class="nav" href="./escolas.html">Escolas</a></li>
+                <li><a class="nav" href="./alunos.html">Alunos</a></li>
+                <li><a class="nav" href="./governo.html">Governo</a></li>
+                <li><a class="nav" href="./sobreNos.html">Sobre nós</a></li>
+                <li><a class="nav btn btn-outline-primary js-scroll-to-contact" href="#areaFormContato" id="contact-button">Entre em Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-title-section">
+            <div class="section-title">
+                <h3>PARCERIAS COM O SETOR PÚBLICO</h3>
+                <h5>Tecnologia e Educação para o Desenvolvimento</h5>
+            </div>
+            <p class="section-subtitle">A Br.ino colabora com entidades governamentais para criar projetos de alto impacto que promovem a inclusão digital e o ensino de tecnologia em larga escala.</p>
+        </section>
+
+        <section class="info-section">
+            <aside>
+                <h2><span class="highlight">Inclusão Digital</span></h2>
+                <p>Desenvolvemos e implementamos laboratórios de robótica em escolas públicas, centros comunitários e bibliotecas, democratizando o acesso à tecnologia e ao conhecimento.</p>
+                <a href="#areaFormContato" class="btn btn-primary js-scroll-to-contact">Discutir um Projeto</a>
+            </aside>
+            <article>
+                <img src="./img/brinomidia2.png" alt="Projeto de inclusão digital" class="info-image">
+            </article>
+        </section>
+
+        <section class="info-section row-reverse">
+            <aside>
+                <h2><span class="highlight">Capacitação Profissional</span></h2>
+                <p>Nossos programas de capacitação preparam jovens para o mercado de trabalho do futuro, focando em habilidades de programação, lógica e resolução de problemas complexos.</p>
+                <a href="#areaFormContato" class="btn btn-primary js-scroll-to-contact">Conheça os Programas</a>
+            </aside>
+            <article>
+                <img src="./img/brinomidia3.png" alt="Jovens em capacitação profissional" class="info-image">
+            </article>
+        </section>
+
+        <section id="contact-section" class="contact-section">
+            <div class="contact-info">
+                <h3><span>Contato</span></h3>
+                <h2>Fale conosco</h2>
+                <p>Estamos prontos para tirar suas dúvidas, agendar uma demonstração ou discutir parcerias.</p>
+                <div class="contact-methods">
+                    <div><img src="img/Telefone.png" alt="Ícone de telefone" width="24px"><span>+55 61 99157-9828</span></div>
+                    <div><img src="img/Email.png" alt="Ícone de e-mail" width="24px"><span>contato@brino.cc</span></div>
+                    <div><img src="img/Localizacao.png" alt="Ícone de localização" width="24px"><span>Parque Tecnológico de Brasília. Lote 4, Edifício de Governança. Bloco "B", 1º Andar. Brasília, DF.</span></div>
+                    <img src="img/mapa.png" id="contact-map" alt="Mapa da localização da Br.ino">
+                </div>
+            </div>
+            <div id="areaFormContato" class="contact-form-area">
+                <h2>Envie sua mensagem</h2>
+                <form id="formContato">
+                    <input type="text" name="nomeCompleto" placeholder="Nome completo" class="form-input" required>
+                    <input type="email" name="email" placeholder="Email" class="form-input" required>
+                    <input type="tel" name="telefone" placeholder="Telefone / WhatsApp" class="form-input" required>
+                    <textarea name="mensagem" rows="6" placeholder="Digite sua mensagem" class="form-textarea" required></textarea>
+                    <button type="submit" class="btn btn-primary form-submit-btn">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <img src="img/imgF.png" class="logo" alt="Logo da Br.ino em rodapé">
+            <p>Copyright © 2025 Br.ino. Todos os Direitos Reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
