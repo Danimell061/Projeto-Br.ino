@@ -302,7 +302,7 @@ h5 {
 .info-section {
     display: flex;
     flex-direction: column;
-    gap: 150px;
+    gap: 50px;
     align-items: center;
     text-align: center;
 }
@@ -310,7 +310,8 @@ h5 {
     display: block;
     width: 100%;
     border-radius: 10px;
-    max-width: 500px;
+    max-width: 450px;
+    max-height: 450px;
 }
 .info-image-right {
     margin-left: auto; 
@@ -522,7 +523,7 @@ footer {
 
 /* --- SEÇÃO LOJA (PRODUTOS) --- */
 .section-subtitle {
-    line-height: 1.5;
+    line-height: 1.2;
     text-align: justify;
 }
 .product-grid-section {
@@ -755,7 +756,7 @@ footer {
     }
 
     .info-section, .contact-section {
-        gap: 80px;
+        gap: 60px;
     }
     .btn-video {
     padding-left: 20%;
