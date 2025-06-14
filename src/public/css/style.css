@@ -181,11 +181,11 @@ header nav ul {
 .text1{
     max-width: 550px; 
     margin-top: 25px;
+    text-align: justify;
 }
 
 
 /* --- SEÇÃO CLIENTES --- */
-
 .clients-section {
     background-color: var(--cor-primaria);
     color: var(--cor-texto-claro);
@@ -302,7 +302,7 @@ h5 {
 .info-section {
     display: flex;
     flex-direction: column;
-    gap: 150px;
+    gap: 50px;
     align-items: center;
     text-align: center;
 }
@@ -310,7 +310,8 @@ h5 {
     display: block;
     width: 100%;
     border-radius: 10px;
-    max-width: 500px;
+    max-width: 450px;
+    max-height: 450px;
 }
 .info-image-right {
     margin-left: auto; 
@@ -521,10 +522,9 @@ footer {
 /* --------------- OUTRAS JANELAS --------------- */
 
 /* --- SEÇÃO LOJA (PRODUTOS) --- */
-.page-intro-text {
-    max-width: 700px; /* Limita a largura para melhor leitura */
-    line-height: 1.7; /* Melhora o espaçamento entre as linhas */
-    font-size: 1.1rem;
+.section-subtitle {
+    line-height: 1.2;
+    text-align: justify;
 }
 .product-grid-section {
     display: grid;
@@ -733,6 +733,9 @@ footer {
         flex: 1;
     }
     /* --------------- OUTRAS JANELAS --------------- */
+    hr {
+    margin-top: 40px;
+    }
     .page-title-section{
         margin-top: 30px;
     }
@@ -753,7 +756,7 @@ footer {
     }
 
     .info-section, .contact-section {
-        gap: 80px;
+        gap: 60px;
     }
     .btn-video {
     padding-left: 20%;
